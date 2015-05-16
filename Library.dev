@@ -1,7 +1,7 @@
 [Project]
 FileName=Library.dev
 Name=Library
-UnitCount=4
+UnitCount=6
 PchHead=-1
 PchSource=-1
 Ver=3
@@ -127,10 +127,21 @@ CompilerSet=9
 CompilerType=9
 
 [Unit5]
-FileName=Images\resources.rc
+FileName=Menu\MyMenu.cpp
 Folder=Library
 Compile=1
-Link=0
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+CompileCpp=1
+
+[Unit6]
+FileName=Menu\MyMenu.h
+CompileCpp=1
+Folder=Library
+Compile=1
+Link=1
 Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
