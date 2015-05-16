@@ -1,0 +1,5 @@
+https://www.gnu.org/savannah-checkouts/gnu/gettext/manual/html_node/xgettext-Invocation.html
+http://docs.wxwidgets.org/2.6.3/wx_internationalization.html
+https://wiki.wxwidgets.org/Internationalization
+http://svn.wxwidgets.org/viewvc/wx/wxWidgets/trunk/samples/internat/internat.cpp?view=markup
+http://docs.wxwidgets.org/trunk/classwx_locale.html#a1e9eb6387646a94c65d1493b5be7641c
