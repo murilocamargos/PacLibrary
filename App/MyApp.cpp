@@ -1,5 +1,4 @@
 #include "MyApp.h"
-#include "MyFrame.h"
 
 IMPLEMENT_APP(MyApp)
 
@@ -8,12 +7,30 @@ IMPLEMENT_APP(MyApp)
  * dialog e irá mostrá-lo na tela.
  */
 bool MyApp::OnInit() {
-	MyFrame *frame = new MyFrame("Library", wxPoint(100, 100), wxSize(800, 600));
+    return this->CreateGUI();
+}
 
-	frame->SetIcon(wxICON(APP_ICON));
-	frame->Show(TRUE);
+bool MyApp::CreateGUI(long lang) {
+    // A internacionalização só irá funcionar se a pasta ./Languages estiver no mesmo
+    // diretório que o executável. Nos testes, o executável se encontra em ./Output/MingW
+    this->locale = new wxLocale(lang);
+    // add locale search paths
+    this->locale->AddCatalogLookupPathPrefix(wxT("./Languages"));
+    this->locale->AddCatalogLookupPathPrefix(wxT("../../Languages"));
+    this->locale->AddCatalog(wxT("myapp"));
+    
+	this->frame = new MyFrame("Library", wxPoint(100, 100), wxSize(800, 600), this);
 
-	SetTopWindow(frame);
+	this->frame->SetIcon(wxICON(APP_ICON));
+	this->frame->Show(TRUE);
+
+	SetTopWindow(this->frame);
 
 	return true;
+}
+
+void MyApp::ChangeLang(long lang) {
+    SetTopWindow(NULL);
+    this->frame->Destroy();
+    this->CreateGUI(lang);
 }
