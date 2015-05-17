@@ -1,7 +1,7 @@
 # Project: Library
 # Compiler: Default GCC compiler
 # Compiler Type: MingW 3
-# Makefile created by wxDev-C++ IDE 7.4.2.569 on 17/05/15 09:35
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 17/05/15 10:00
 
 WXLIBNAME = wxmsw29u
 CPP       = g++.exe
@@ -36,13 +36,13 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
 
-Objects/MingW/MyApp.o: $(GLOBALDEPS) App/MyApp.cpp App/MyApp.h App/MyFrame.h
+Objects/MingW/MyApp.o: $(GLOBALDEPS) App/MyApp.cpp App/MyApp.h App/MyFrame.h Menu/MyMenu.h
 	$(CPP) -c App/MyApp.cpp -o Objects/MingW/MyApp.o $(CXXFLAGS)
 
-Objects/MingW/MyFrame.o: $(GLOBALDEPS) App/MyFrame.cpp App/MyFrame.h App/MyApp.h App/MyFrame.h Menu/MyMenu.h
+Objects/MingW/MyFrame.o: $(GLOBALDEPS) App/MyFrame.cpp App/MyFrame.h Menu/MyMenu.h App/MyApp.h App/MyFrame.h
 	$(CPP) -c App/MyFrame.cpp -o Objects/MingW/MyFrame.o $(CXXFLAGS)
 
-Objects/MingW/MyMenu.o: $(GLOBALDEPS) Menu/MyMenu.cpp Menu/MyMenu.h App/MyApp.h App/MyFrame.h
+Objects/MingW/MyMenu.o: $(GLOBALDEPS) Menu/MyMenu.cpp Menu/MyMenu.h App/MyApp.h App/MyFrame.h Menu/MyMenu.h
 	$(CPP) -c Menu/MyMenu.cpp -o Objects/MingW/MyMenu.o $(CXXFLAGS)
 
 Objects/MingW/Library_private.res: Objects/MingW/Library_private.rc Images/resources.rc 

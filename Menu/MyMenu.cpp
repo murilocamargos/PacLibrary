@@ -46,3 +46,12 @@ wxString MyMenu::ChangeAppLang(wxApp* app, long lang) {
     myApp->ChangeLang(lang);
     return "";
 }
+
+wxString MyMenu::FilePath(wxString title, wxString extensions, wxString defDir) {
+    wxFileDialog fd(this, title, defDir, "", extensions, wxFD_OPEN|wxFD_FILE_MUST_EXIST);
+    
+    if (fd.ShowModal() == wxID_CANCEL)
+        return "";
+    
+    return fd.GetPath();
+}

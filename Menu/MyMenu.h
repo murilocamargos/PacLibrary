@@ -20,6 +20,7 @@ class MyMenu: public wxMenuBar {
         wxMenu* GetFromMap(wxString label);
         
         wxString ChangeAppLang(wxApp* app, long lang);
+        wxString FilePath(wxString title, wxString extensions, wxString defDir = "");
 };
 
 #endif
