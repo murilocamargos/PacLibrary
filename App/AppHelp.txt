@@ -1,0 +1,17 @@
+App
+===
+
+O    módulo    `App`    foi   desenvolvido   com   foco   na
+internacionalização.  A modificação do idioma da aplicação é
+feita  através  do  método `ChangeLang`. Para mudar o idioma
+da  aplicação em tempo de execução, a solução encontrada foi
+destruir o frame principal e criar outro com o novo idioma.
+
+Além  disso, quando o usuário fecha a aplicação, o destrutor
+do  módulo  irá salvar o último idioma definido pelo usuário
+num  registro  do  windows.  Assim, quando o usuário abrir o
+aplicativo   novamente,   o   último  idioma  definido  será
+carregado à partir do registro salvo.
+
+Esta  classe  é  responsável pela criação do frame principal
+da aplicação.

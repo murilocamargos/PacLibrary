@@ -5,8 +5,8 @@
 #include "MyFrame.h"
 
 /**
- * Esta é a definição da classe que inicializa o frame da aplicação utilizando o método
- * `OnInit` para isso.
+ * Esta  é  a definição da classe que inicializa o frame da aplicação utilizando
+ * o método `OnInit` para isso.
  */
 class MyApp : public wxApp {
     private:
