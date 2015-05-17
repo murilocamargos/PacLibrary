@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-16 09:51-0300\n"
-"PO-Revision-Date: 2015-05-16 09:52-0300\n"
+"POT-Creation-Date: 2015-05-17 12:03-0300\n"
+"PO-Revision-Date: 2015-05-17 12:06-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -18,74 +18,166 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.7.6\n"
 
-#: .\MyFrame.cpp:38
-msgid "About"
-msgstr "Sobre"
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:40
+msgid "About\tF2"
+msgstr "Sobre\tF2"
 
-#: .\MyFrame.cpp:35
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:70
+msgid "All files (*.*)|*.*"
+msgstr "Todos os Arquivos (*.*)|*.*"
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:27
+msgid "Change the app language to english!"
+msgstr "Alterar idioma da aplicação para inglês!"
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:28
+msgid "Change the app language to portuguese!"
+msgstr "Alterar idioma da aplicação para portugês!"
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:42
 msgid "Change the app language."
 msgstr "Alterar o idioma do aplicativo."
 
-#: .\MyFrame.cpp:24
-msgid "Change to english!"
-msgstr "Alterar para inglês!"
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:76
+msgid "Confirmation"
+msgstr "Confirmação"
 
-#: .\MyFrame.cpp:25
-msgid "Change to portuguese!"
-msgstr "Alterar para português!"
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:76
+msgid "Do you really want to close the app?"
+msgstr "Você deseja realmente fechar o aplicativo?"
 
-#: .\MyFrame.cpp:24
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:27
 msgid "English"
 msgstr "Inglês"
 
-#: .\MyFrame.cpp:37
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:21
 msgid "File"
 msgstr "Arquivo"
 
-#: .\MyFrame.cpp:33
-msgid "Get Help"
-msgstr "Obter Ajuda"
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:39
+msgid "Get Help."
+msgstr "Obter ajuda."
 
-#: .\MyFrame.cpp:33
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:40
+msgid "Get to know us better!"
+msgstr "Conheça-nos melhor!"
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:22
+msgid "Help"
+msgstr "Ajuda"
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:39
 msgid "Help\tF1"
 msgstr "Ajuda\tF1"
 
-#: .\MyFrame.cpp:35
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:23
 msgid "Languages"
 msgstr "Idiomas"
 
-#: .\MyFrame.cpp:27
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:33
 msgid "New\tCtrl+N"
 msgstr "Novo\tCtrl+N"
 
-#: .\MyFrame.cpp:27
-msgid "New File"
-msgstr "Novo Arquivo"
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:33
+msgid "New File."
+msgstr "Novo Arquivo."
 
-#: .\MyFrame.cpp:28
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:34
 msgid "Open\tCtrl+O"
 msgstr "Abrir\tCtrl+O"
 
-#: .\MyFrame.cpp:28
-msgid "Open File"
-msgstr "Abrir Arquivo"
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:34
+msgid "Open File."
+msgstr "Abrir Arquivo."
 
-#: .\MyFrame.cpp:25
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:28
 msgid "Portuguese"
 msgstr "Português"
 
-#: .\MyFrame.cpp:31
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:37
 msgid "Quit\tCtrl+Q"
 msgstr "Sair\tCtrl+Q"
 
-#: .\MyFrame.cpp:31
-msgid "Quit App"
-msgstr "Fechar Aplicativo"
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:37
+msgid "Quit App."
+msgstr "Fechar Aplicativo."
 
-#: .\MyFrame.cpp:29
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:35
 msgid "Save\tCtrl+S"
 msgstr "Salvar\tCtrl+S"
 
-#: .\MyFrame.cpp:29
-msgid "Save File"
-msgstr "Salvar Arquivo"
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:35
+msgid "Save File."
+msgstr "Salvar Arquivo."
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:70
+msgid "Select a file"
+msgstr "Selecione um arquivo"
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\Menu\MyMenu.cpp:44
+msgid "This language is already selected!"
+msgstr "Este idioma já está selecionado!"
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\Menu\MyMenu.cpp:41
+msgid "This language is not supported by your system."
+msgstr "Seu sistema não possui suporte a este idioma."
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:62
+msgid "You have created a new file!"
+msgstr "Você criou um novo arquivo!"
+
+#: C:\Users\Murilo
+#: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:66
+msgid "Your file was saved with success!"
+msgstr "Seu arquivo foi salvo com sucesso!"
+
+#~ msgid "About"
+#~ msgstr "Sobre"
+
+#~ msgid "Change to english!"
+#~ msgstr "Alterar para inglês!"
+
+#~ msgid "Change to portuguese!"
+#~ msgstr "Alterar para português!"
+
+#~ msgid "Get Help"
+#~ msgstr "Obter Ajuda"
+
+#~ msgid "New File"
+#~ msgstr "Novo Arquivo"
+
+#~ msgid "Open File"
+#~ msgstr "Abrir Arquivo"
+
+#~ msgid "Quit App"
+#~ msgstr "Fechar Aplicativo"
+
+#~ msgid "Save File"
+#~ msgstr "Salvar Arquivo"

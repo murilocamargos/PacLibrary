@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-17 11:59-0300\n"
-"PO-Revision-Date: 2015-05-17 12:00-0300\n"
+"POT-Creation-Date: 2015-05-17 12:03-0300\n"
+"PO-Revision-Date: 2015-05-17 12:03-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -20,8 +20,8 @@ msgstr ""
 
 #: C:\Users\Murilo
 #: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:40
-msgid "About\tF1"
-msgstr "About\tF1"
+msgid "About\tF2"
+msgstr "About\tF2"
 
 #: C:\Users\Murilo
 #: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:70
@@ -157,6 +157,9 @@ msgstr "You have created a new file!"
 #: Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:66
 msgid "Your file was saved with success!"
 msgstr "Your file was saved with success!"
+
+#~ msgid "About\tF1"
+#~ msgstr "About\tF1"
 
 #~ msgid "About"
 #~ msgstr "About"
