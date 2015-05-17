@@ -14,13 +14,14 @@ class MyMenu: public wxMenuBar {
         MyMenu();
         
         void AddMenu(wxString label, bool append = true);
-        void AddSubMenu(wxString menuLabel, int ID, wxString label, wxString help);
+        void AddSubMenu(wxString menuLabel, int ID, wxString label,
+            wxString help);
         void AddSubMenu(wxString menuLabel, wxString label, wxString help);
         void Separator(wxString menuLabel);
-        wxMenu* GetFromMap(wxString label);
         
         wxString ChangeAppLang(wxApp* app, long lang);
-        wxString FilePath(wxString title, wxString extensions, wxString defDir = "");
+        wxString FilePath(wxString title, wxString extensions,
+            wxString defDir = "");
 };
 
 #endif

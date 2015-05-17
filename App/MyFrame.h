@@ -9,7 +9,8 @@ class MyFrame : public wxFrame {
         MyMenu *menu;
         wxApp *app;
     public:
-        MyFrame(const wxString& title, const wxPoint& position, const wxSize& size, wxApp *app);
+        MyFrame(const wxString& title, const wxPoint& position, 
+            const wxSize& size, wxApp *app);
         
         void OnMenuAboutLangPT(wxCommandEvent &);
         void OnMenuAboutLangEN(wxCommandEvent &);

@@ -59,7 +59,8 @@ bool MyApp::SetLocale(long lang) {
  * Este método é responsável pela criação e exibição do frame principal.
  */
 bool MyApp::CreateGUI() {
-	this->frame = new MyFrame("Library", wxPoint(100, 100), wxSize(800, 600), this);
+	this->frame = new MyFrame("Library", wxPoint(100, 100), wxSize(800, 600),
+        this);
 	
     this->frame->SetIcon(wxICON(APP_ICON));
 	this->frame->Show(TRUE);
