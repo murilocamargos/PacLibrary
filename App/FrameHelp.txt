@@ -1,0 +1,43 @@
+Frame
+=====
+
+O  frame  é  a  janela  principal  da  aplicação,  onde  são
+definidos   menus,   barras   de  satus  e  diversos  outros
+componentes.
+
+Todas  as  mensagens do sistema são mostradas ao usuário por
+esta  classe,  apesar  de algumas dessas menssagens virem de
+outras classes como resposta de algum método.
+
+
+========================= Versão 1 =========================
+
+1.0 Eventos de menu
+===================
+   Estas  são  as  funções  que  tratam eventos de menu. São
+   chamadas  quando  o  usuário clica em algum menu da barra
+   de menus.
+
+   1.1.1 OnMenuAboutLangPT e OnMenuAboutLangEN
+   ===========================================
+      Esta  função  modifica  o  idioma  da  aplicação  para
+      português ou inglês.
+  
+   1.1.2 OnMenuFileNew e OnMenuFileSave
+   ====================================
+      Nesta  versão  do código, essas funções apenas mostram
+      mensagens com o `wxLogMessage`.
+
+   1.1.3 OnMenuFileOpen
+   ====================
+      Abre  um  `file  dialog`  para escolha de arquivos num
+      diretório do sistema.
+
+   1.1.5 OnMenuFileQuit
+   ====================
+      Fecha  a  aplicação  após  perguntar ao usuário se ele
+      realmente deseja fechá-la.
+
+2.0 MyFrame
+===========
+   O construtor cria os menus através do módulo `MyMenu`.

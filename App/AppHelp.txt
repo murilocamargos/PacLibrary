@@ -15,3 +15,41 @@ carregado à partir do registro salvo.
 
 Esta  classe  é  responsável pela criação do frame principal
 da aplicação.
+
+
+========================= Versão 1 =========================
+
+1.0 OnInit e OnExit
+===================
+   O    construtor    e   destrutor   da   aplicação   foram
+   implementados  com foco na internacionalização. Ao fechar
+   a  aplicação,  o  destrutor  salva  um registro do último
+   idioma  utilizado;  ao  abrir  a  aplicação, o construtor
+   tenta  recuperar esse registro, caso não consiga, utiliza
+   o idiom Português.
+
+   1.1 LoadLang
+   ============
+      Método  utilizado pelo construtor para tentar carregar
+      a  constante salva em registro que representa o idioma
+      escolhido pelo usuário. Chamado por `OnInit`.
+
+2.0 SetLocale
+=============
+   Este  método  é  utilizado  pelos métodos que modificam o
+   idioma  da  aplicação,  `OnInit`  e o `ChangeLang`. Nesse
+   método  os  diretórios onde serão buscados os dicionários
+   são definidos.
+
+3.0 CreateGUI
+=============
+   Este  método  é responsável por criar o frame principal e
+   mostrá-lo  na tela. Os métodos que o chamam são: `OnInit`
+   e `ChangeLang`.
+
+4.0 ChangeLang
+==============
+   Modifica  o  idioma  da  aplicação  em tempo de execução.
+   Para  isso,  chama  o  método  `SetLocale` para definir o
+   novo idioma, destrói o frame principal e cria outro.
+  
