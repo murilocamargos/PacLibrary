@@ -37,7 +37,7 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& position, const wxSize& s
     this->menu->AddSubMenu(file, MENU_FILE_QUIT, _("Quit\tCtrl+Q"), _("Quit App."));
     
     this->menu->AddSubMenu(help, -1, _("Help\tF1"), _("Get Help."));
-    this->menu->AddSubMenu(help, -1, _("About\tF1"), _("Get to know us better!"));
+    this->menu->AddSubMenu(help, -1, _("About\tF2"), _("Get to know us better!"));
     this->menu->Separator(help);
     this->menu->AddSubMenu(help, lang, _("Change the app language."));
     

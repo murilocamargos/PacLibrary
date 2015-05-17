@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-16 09:51-0300\n"
+"POT-Creation-Date: 2015-05-17 11:59-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,74 +16,114 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: .\MyFrame.cpp:38
-msgid "About"
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:40
+msgid "About\tF1"
 msgstr ""
 
-#: .\MyFrame.cpp:35
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:70
+msgid "All files (*.*)|*.*"
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:27
+msgid "Change the app language to english!"
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:28
+msgid "Change the app language to portuguese!"
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:42
 msgid "Change the app language."
 msgstr ""
 
-#: .\MyFrame.cpp:24
-msgid "Change to english!"
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:76
+msgid "Confirmation"
 msgstr ""
 
-#: .\MyFrame.cpp:25
-msgid "Change to portuguese!"
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:76
+msgid "Do you really want to close the app?"
 msgstr ""
 
-#: .\MyFrame.cpp:24
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:27
 msgid "English"
 msgstr ""
 
-#: .\MyFrame.cpp:37
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:21
 msgid "File"
 msgstr ""
 
-#: .\MyFrame.cpp:33
-msgid "Get Help"
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:39
+msgid "Get Help."
 msgstr ""
 
-#: .\MyFrame.cpp:33
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:40
+msgid "Get to know us better!"
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:22
+msgid "Help"
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:39
 msgid "Help\tF1"
 msgstr ""
 
-#: .\MyFrame.cpp:35
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:23
 msgid "Languages"
 msgstr ""
 
-#: .\MyFrame.cpp:27
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:33
 msgid "New\tCtrl+N"
 msgstr ""
 
-#: .\MyFrame.cpp:27
-msgid "New File"
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:33
+msgid "New File."
 msgstr ""
 
-#: .\MyFrame.cpp:28
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:34
 msgid "Open\tCtrl+O"
 msgstr ""
 
-#: .\MyFrame.cpp:28
-msgid "Open File"
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:34
+msgid "Open File."
 msgstr ""
 
-#: .\MyFrame.cpp:25
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:28
 msgid "Portuguese"
 msgstr ""
 
-#: .\MyFrame.cpp:31
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:37
 msgid "Quit\tCtrl+Q"
 msgstr ""
 
-#: .\MyFrame.cpp:31
-msgid "Quit App"
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:37
+msgid "Quit App."
 msgstr ""
 
-#: .\MyFrame.cpp:29
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:35
 msgid "Save\tCtrl+S"
 msgstr ""
 
-#: .\MyFrame.cpp:29
-msgid "Save File"
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:35
+msgid "Save File."
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:70
+msgid "Select a file"
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\Menu\MyMenu.cpp:44
+msgid "This language is already selected!"
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\Menu\MyMenu.cpp:41
+msgid "This language is not supported by your system."
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:62
+msgid "You have created a new file!"
+msgstr ""
+
+#: C:\Users\Murilo Camargos\Documents\University\PAC\pac-tpii\App\MyFrame.cpp:66
+msgid "Your file was saved with success!"
 msgstr ""
