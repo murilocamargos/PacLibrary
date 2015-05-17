@@ -4,9 +4,9 @@
 #include <wx/wx.h>
 
 class MyFrame : public wxFrame {
-    private:
-        wxApp *app;
     public:
+        wxApp *app;
+        
         MyFrame(const wxString& title, const wxPoint& position, const wxSize& size, wxApp *app);
         
         void OnMenuAboutLangPT(wxCommandEvent &);

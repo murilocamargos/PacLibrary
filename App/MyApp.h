@@ -15,8 +15,13 @@ class MyApp : public wxApp {
         wxLocale *locale;
         
         virtual bool OnInit();
-        bool CreateGUI(long = wxLANGUAGE_PORTUGUESE);
-        void ChangeLang(long);
+        virtual int OnExit();
+        
+        long LoadLang();
+        
+        bool SetLocale(long);
+        bool CreateGUI();
+        bool ChangeLang(long);
 };
 
 DECLARE_APP(MyApp)
