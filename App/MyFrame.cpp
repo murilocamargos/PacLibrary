@@ -25,7 +25,7 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& position,
              
     // Cria o menu de idiomas sem adicioná-lo à barra de menus.
     this->menu->AddMenu(lang, false);
-    this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_EN, _("English")
+    this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_EN, _("English"),
         _("Change the app language to english!"));
     this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_PT, _("Portuguese"),
         _("Change the app language to portuguese!"));
