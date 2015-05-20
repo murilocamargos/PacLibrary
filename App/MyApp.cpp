@@ -45,13 +45,13 @@ bool MyApp::SetLocale(long lang) {
     // mesmo  diretório  que  o executável. Nos testes, o executável se encontra
     // em ./Output/MingW
     this->locale = new wxLocale(lang);
-    
+
     // Busca pelos arquivos de tradução nos diretórios abaixo.
     this->locale->AddCatalogLookupPathPrefix(wxT("./Languages"));
     this->locale->AddCatalogLookupPathPrefix(wxT("../../Languages"));
-    
+
     this->locale->AddCatalog(wxT("myapp"));
-    
+
     return this->locale->IsOk();
 }
 
@@ -61,10 +61,10 @@ bool MyApp::SetLocale(long lang) {
 bool MyApp::CreateGUI() {
 	this->frame = new MyFrame("Library", wxPoint(100, 100), wxSize(800, 600),
         this);
-	
+
     this->frame->SetIcon(wxICON(APP_ICON));
 	this->frame->Show(TRUE);
-	
+
     SetTopWindow(this->frame);
 
 	return true;
@@ -74,7 +74,7 @@ bool MyApp::ChangeLang(long lang) {
     // Para  mudar  o  idioma  da  aplicação  em  tempo  de  execução, a solução
     // encontrada  foi  destruir  o  frame  principal  e  criar outro com o novo
     // idioma.
-    
+
     if (this->SetLocale(lang)) {
         SetTopWindow(NULL);
         this->frame->Destroy();
@@ -82,6 +82,6 @@ bool MyApp::ChangeLang(long lang) {
         this->CreateGUI();
         return true;
     }
-    
+
     return false;
 }

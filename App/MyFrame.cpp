@@ -4,6 +4,7 @@
 BEGIN_EVENT_TABLE(MyFrame, wxFrame)
     EVT_MENU(MENU_ABOUT_LANG_PT, MyFrame::OnMenuAboutLangPT)
     EVT_MENU(MENU_ABOUT_LANG_EN, MyFrame::OnMenuAboutLangEN)
+    EVT_MENU(MENU_ABOUT_LANG_FR, MyFrame::OnMenuAboutLangFR)
     EVT_MENU(MENU_FILE_NEW, MyFrame::OnMenuFileNew)
     EVT_MENU(MENU_FILE_SAVE, MyFrame::OnMenuFileSave)
     EVT_MENU(MENU_FILE_OPEN, MyFrame::OnMenuFileOpen)
@@ -13,26 +14,28 @@ END_EVENT_TABLE()
 MyFrame::MyFrame(const wxString& title, const wxPoint& position,
     const wxSize& size, wxApp *app) : wxFrame((wxFrame *) NULL, wxID_ANY, title,
     position, size) {
-    
+
     this->app = app;
-    
+
     // MenuBar
     this->menu = new MyMenu();
-    
+
     wxString file = _("File"),
              help = _("Help"),
              lang = _("Languages");
-             
+
     // Cria o menu de idiomas sem adicioná-lo à barra de menus.
     this->menu->AddMenu(lang, false);
     this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_EN, _("English"),
         _("Change the app language to english!"));
     this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_PT, _("Portuguese"),
         _("Change the app language to portuguese!"));
-    
+    this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_FR, _("French"),
+        _("Change the app language to french!"));
+
     this->menu->AddMenu(file);
     this->menu->AddMenu(help);
-    
+
     this->menu->AddSubMenu(file, MENU_FILE_NEW, _("New\tCtrl+N"),
         _("New File."));
     this->menu->AddSubMenu(file, MENU_FILE_OPEN, _("Open\tCtrl+O"),
@@ -42,14 +45,14 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& position,
     this->menu->Separator(file);
     this->menu->AddSubMenu(file, MENU_FILE_QUIT, _("Quit\tCtrl+Q"),
         _("Quit App."));
-    
+
     this->menu->AddSubMenu(help, -1, _("Help\tF1"),
         _("Get Help."));
     this->menu->AddSubMenu(help, -1, _("About\tF2"),
         _("Get to know us better!"));
     this->menu->Separator(help);
     this->menu->AddSubMenu(help, lang, _("Change the app language."));
-    
+
     SetMenuBar(this->menu);
 
 };
@@ -63,6 +66,12 @@ void MyFrame::OnMenuAboutLangPT(wxCommandEvent& event) {
 
 void MyFrame::OnMenuAboutLangEN(wxCommandEvent& event) {
     wxString msg = this->menu->ChangeAppLang(this->app, wxLANGUAGE_ENGLISH);
+    if (msg != "")
+        wxLogMessage(msg);
+}
+
+void MyFrame::OnMenuAboutLangFR(wxCommandEvent& event) {
+    wxString msg = this->menu->ChangeAppLang(this->app, wxLANGUAGE_FRENCH);
     if (msg != "")
         wxLogMessage(msg);
 }
