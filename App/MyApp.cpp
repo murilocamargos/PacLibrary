@@ -1,5 +1,7 @@
 #include "MyApp.h"
 #include <wx/config.h>
+#include "../SplashScreen/SplashScreen.h"
+#include <wx/imagpng.h>
 
 IMPLEMENT_APP(MyApp)
 
@@ -8,6 +10,12 @@ IMPLEMENT_APP(MyApp)
  * partir do registro do windows.
  */
 bool MyApp::OnInit() {
+    //wxImage::AddHandler(new wxPNGHandler);
+    SplashScreen *splash = new SplashScreen();
+    splash->LoadImage(wxBITMAP(SPLBMP));
+    splash->SetTime(2000);
+    splash->Show();
+
     this->SetLocale(this->LoadLang());
     return this->CreateGUI();
 }

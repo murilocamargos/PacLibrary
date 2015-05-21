@@ -1,5 +1,5 @@
 #include "wx/msw/wx.rc"
 
-APP_ICON        ICON   "icon.ico"
-
-//BMP_FILL        BITMAP "fill.bmp"
+APP_ICON    ICON    "icon.ico"
+SPLASH      RCDATA  "splash.png"
+SPLBMP      BITMAP  "splash.bmp"
