@@ -51,6 +51,8 @@
 		</Unit>
 		<Unit filename="Menu/MyMenu.cpp" />
 		<Unit filename="Menu/MyMenu.h" />
+		<Unit filename="SplashScreen/SplashScreen.cpp" />
+		<Unit filename="SplashScreen/SplashScreen.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
