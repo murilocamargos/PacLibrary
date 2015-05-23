@@ -9,12 +9,16 @@ IMPLEMENT_APP(MyApp)
  * Este  método  irá  inicializar a aplicação com um idioma que será carregado a
  * partir do registro do windows.
  */
+
 bool MyApp::OnInit() {
     //wxImage::AddHandler(new wxPNGHandler);
     SplashScreen *splash = new SplashScreen();
     splash->LoadImage(wxBITMAP(SPLBMP));
     splash->SetTime(2000);
     splash->Show();
+
+    taskbar = new wxTaskBarIcon();
+    taskbar->SetIcon(wxICON(APP_ICON));
 
     this->SetLocale(this->LoadLang());
     return this->CreateGUI();
@@ -69,7 +73,6 @@ bool MyApp::SetLocale(long lang) {
 bool MyApp::CreateGUI() {
 	this->frame = new MyFrame("Library", wxPoint(100, 100), wxSize(800, 600),
         this);
-
     this->frame->SetIcon(wxICON(APP_ICON));
 	this->frame->Show(TRUE);
 
@@ -93,3 +96,5 @@ bool MyApp::ChangeLang(long lang) {
 
     return false;
 }
+
+

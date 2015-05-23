@@ -3,6 +3,7 @@
 
 #include <wx/wx.h>
 #include "../Menu/MyMenu.h"
+#include <wx/taskbar.h>
 
 class MyFrame : public wxFrame {
     private:
@@ -11,7 +12,6 @@ class MyFrame : public wxFrame {
     public:
         MyFrame(const wxString& title, const wxPoint& position,
             const wxSize& size, wxApp *app);
-
         void OnMenuAboutLangPT(wxCommandEvent &);
         void OnMenuAboutLangEN(wxCommandEvent &);
         void OnMenuAboutLangFR(wxCommandEvent &);
