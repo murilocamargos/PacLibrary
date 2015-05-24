@@ -10,16 +10,15 @@ IMPLEMENT_APP(MyApp)
  * partir do registro do windows.
  */
 
-bool MyApp::OnInit() {
+bool MyApp::OnInit()
+{
     //wxImage::AddHandler(new wxPNGHandler);
     SplashScreen *splash = new SplashScreen();
     splash->LoadImage(wxBITMAP(SPLBMP));
     splash->SetTime(2000);
     splash->Show();
-
-    taskbar = new wxTaskBarIcon();
-    taskbar->SetIcon(wxICON(APP_ICON));
-
+    ///TaskBar
+    taskbar = new TaskBar();
     this->SetLocale(this->LoadLang());
     return this->CreateGUI();
 }
@@ -29,7 +28,17 @@ bool MyApp::OnInit() {
  * ele  irá  guardar  o  último  idioma  definido  pelo  usuário num registro do
  * windows.
  */
-int MyApp::OnExit() {
+int MyApp::OnExit() //Fecha aplicaçao
+{
+    if(frame->flag)//Minimizada a tela
+    {
+        this->SetExitOnFrameDelete(false);//Aplicaçao nao irá fechar quando o último frame for deletado.
+        taskbar->SetIcon(wxICON(APP_ICON));//Taskbar visivel para reiniar aplicaçao.
+    }
+    else//Destroi a aplicação
+    {
+        this->SetExitOnFrameDelete(true);//Aplicaçao irá fechar quando o último frame for deletado.
+    }
     wxConfig config(GetAppName());
     long language = this->locale->GetLanguage();
     config.Write(wxT("wxTranslation_Language"), language);
@@ -42,17 +51,20 @@ int MyApp::OnExit() {
  * salvo  no  registro  do  windows.  Caso não consiga, utiliza o idioma padrão:
  * Português.
  */
-long MyApp::LoadLang() {
+long MyApp::LoadLang()
+{
     wxConfig config(GetAppName());
     long language;
     if(!config.Read(wxT("wxTranslation_Language"), &language,
-        wxLANGUAGE_PORTUGUESE)) {
+                    wxLANGUAGE_PORTUGUESE))
+    {
         language = wxLANGUAGE_PORTUGUESE;
     }
     return language;
 }
 
-bool MyApp::SetLocale(long lang) {
+bool MyApp::SetLocale(long lang)
+{
     // A  internacionalização só irá funcionar se a pasta ./Languages estiver no
     // mesmo  diretório  que  o executável. Nos testes, o executável se encontra
     // em ./Output/MingW
@@ -70,23 +82,27 @@ bool MyApp::SetLocale(long lang) {
 /**
  * Este método é responsável pela criação e exibição do frame principal.
  */
-bool MyApp::CreateGUI() {
-	this->frame = new MyFrame("Library", wxPoint(100, 100), wxSize(800, 600),
-        this);
+bool MyApp::CreateGUI()
+{
+    this->frame = new MyFrame(_("Library"), wxPoint(100, 100), wxSize(800, 600),
+                              this);
     this->frame->SetIcon(wxICON(APP_ICON));
-	this->frame->Show(TRUE);
+    this->frame->Show(TRUE);
 
     SetTopWindow(this->frame);
 
-	return true;
+    taskbar->Set_Frame(this->frame);
+    return true;
 }
 
-bool MyApp::ChangeLang(long lang) {
+bool MyApp::ChangeLang(long lang)
+{
     // Para  mudar  o  idioma  da  aplicação  em  tempo  de  execução, a solução
     // encontrada  foi  destruir  o  frame  principal  e  criar outro com o novo
     // idioma.
 
-    if (this->SetLocale(lang)) {
+    if (this->SetLocale(lang))
+    {
         SetTopWindow(NULL);
         this->frame->Destroy();
         // Recria o frame com o novo idioma.

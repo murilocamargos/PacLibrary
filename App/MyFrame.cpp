@@ -9,14 +9,15 @@ BEGIN_EVENT_TABLE(MyFrame, wxFrame)
     EVT_MENU(MENU_FILE_SAVE, MyFrame::OnMenuFileSave)
     EVT_MENU(MENU_FILE_OPEN, MyFrame::OnMenuFileOpen)
     EVT_MENU(MENU_FILE_QUIT, MyFrame::OnMenuFileQuit)
+    EVT_ICONIZE(MyFrame::HideOnTaskBar)
 END_EVENT_TABLE()
 
 MyFrame::MyFrame(const wxString& title, const wxPoint& position,
-    const wxSize& size, wxApp *app) : wxFrame((wxFrame *) NULL, wxID_ANY, title,
-    position, size) {
+                 const wxSize& size, wxApp *app) : wxFrame((wxFrame *) NULL, wxID_ANY, title,
+                             position, size)
+{
 
     this->app = app;
-
     // MenuBar
     this->menu = new MyMenu();
 
@@ -27,73 +28,112 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& position,
     // Cria o menu de idiomas sem adicioná-lo à barra de menus.
     this->menu->AddMenu(lang, false);
     this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_EN, _("English"),
-        _("Change the app language to english!"));
+                           _("Change the app language to english!"));
     this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_PT, _("Portuguese"),
-        _("Change the app language to portuguese!"));
+                           _("Change the app language to portuguese!"));
     this->menu->AddSubMenu(lang, MENU_ABOUT_LANG_FR, _("French"),
-        _("Change the app language to french!"));
+                           _("Change the app language to french!"));
 
     this->menu->AddMenu(file);
     this->menu->AddMenu(help);
 
     this->menu->AddSubMenu(file, MENU_FILE_NEW, _("New\tCtrl+N"),
-        _("New File."));
+                           _("New File."));
     this->menu->AddSubMenu(file, MENU_FILE_OPEN, _("Open\tCtrl+O"),
-        _("Open File."));
+                           _("Open File."));
     this->menu->AddSubMenu(file, MENU_FILE_SAVE, _("Save\tCtrl+S"),
-        _("Save File."));
+                           _("Save File."));
     this->menu->Separator(file);
     this->menu->AddSubMenu(file, MENU_FILE_QUIT, _("Quit\tCtrl+Q"),
-        _("Quit App."));
+                           _("Quit App."));
 
     this->menu->AddSubMenu(help, -1, _("Help\tF1"),
-        _("Get Help."));
+                           _("Get Help."));
     this->menu->AddSubMenu(help, -1, _("About\tF2"),
-        _("Get to know us better!"));
+                           _("Get to know us better!"));
     this->menu->Separator(help);
     this->menu->AddSubMenu(help, lang, _("Change the app language."));
 
     SetMenuBar(this->menu);
 
+    //StatusBar
+    CreateStatusBar(3);
+    SetStatusText(_("Welcome Library's user!!"),1);
+
 };
 
 
-void MyFrame::OnMenuAboutLangPT(wxCommandEvent& event) {
+void MyFrame::OnMenuAboutLangPT(wxCommandEvent& event)
+{
     wxString msg = this->menu->ChangeAppLang(this->app, wxLANGUAGE_PORTUGUESE);
     if (msg != "")
         wxLogMessage(msg);
 }
 
-void MyFrame::OnMenuAboutLangEN(wxCommandEvent& event) {
+void MyFrame::OnMenuAboutLangEN(wxCommandEvent& event)
+{
     wxString msg = this->menu->ChangeAppLang(this->app, wxLANGUAGE_ENGLISH);
     if (msg != "")
         wxLogMessage(msg);
 }
 
-void MyFrame::OnMenuAboutLangFR(wxCommandEvent& event) {
+void MyFrame::OnMenuAboutLangFR(wxCommandEvent& event)
+{
     wxString msg = this->menu->ChangeAppLang(this->app, wxLANGUAGE_FRENCH);
     if (msg != "")
         wxLogMessage(msg);
 }
 
-void MyFrame::OnMenuFileNew(wxCommandEvent& event) {
+void MyFrame::OnMenuFileNew(wxCommandEvent& event)
+{
     wxLogMessage(_("You have created a new file!"));
 }
 
-void MyFrame::OnMenuFileSave(wxCommandEvent& event) {
+void MyFrame::OnMenuFileSave(wxCommandEvent& event)
+{
     wxLogMessage(_("Your file was saved with success!"));
 }
 
-void MyFrame::OnMenuFileOpen(wxCommandEvent& event) {
+void MyFrame::OnMenuFileOpen(wxCommandEvent& event)
+{
     wxString path = this->menu->FilePath(_("Select a file"),
-        _("All files (*.*)|*.*"));
+                                         _("All files (*.*)|*.*"));
     if (path != "")
         wxLogMessage(path);
 }
 
-void MyFrame::OnMenuFileQuit(wxCommandEvent& event) {
+void MyFrame::OnMenuFileQuit(wxCommandEvent& event)
+{
     int answer = wxMessageBox(_("Do you really want to close the app?"),
-        _("Confirmation"), wxYES_NO | wxCANCEL, NULL);
+                              _("Confirmation"), wxYES_NO | wxCANCEL, NULL);
     if (answer == wxYES)
+    {
+        flag = false;
+        app->OnExit();
         Close(true);
+    }
+    else if(answer == wxNO) ///Minimiza
+    {
+        flag = true;
+        app->OnExit();
+        Close(true);
+    }
+
+}
+
+void MyFrame::HideOnTaskBar(wxIconizeEvent &event)
+{
+    flag = true;
+    app->OnExit(); //Destroi a aplicação, mas nao o taskbar.
+    Close(true);
+}
+
+MyMenu *MyFrame::Get_Menu()
+{
+    return this->menu;
+}
+
+wxApp *MyFrame::Get_App()
+{
+    return this->app;
 }

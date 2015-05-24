@@ -2946,17 +2946,17 @@
 1412649242 c:\wxwidgets-3.0.2\include\wx\cocoa\mdi.h
 	"wx/frame.h"
 
-1432414024 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\app\myapp.h
+1432490358 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\app\myapp.h
 	<wx/wx.h>
-	<wx/taskbar.h>
 	"MyFrame.h"
+	"../TaskBar/TaskBar.h"
 
-1432413801 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\app\myframe.h
+1432488232 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\app\myframe.h
 	<wx/wx.h>
 	"../Menu/MyMenu.h"
 	<wx/taskbar.h>
 
-1432414007 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\app\myapp.cpp
+1432490334 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\app\myapp.cpp
 	"MyApp.h"
 	<wx/config.h>
 	"../SplashScreen/SplashScreen.h"
@@ -3009,7 +3009,7 @@
 	"wx/string.h"
 	"wx/dynarray.h"
 
-1432411883 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\app\myframe.cpp
+1432490193 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\app\myframe.cpp
 	"MyFrame.h"
 	"MyApp.h"
 
@@ -3085,4 +3085,13 @@
 
 1412649242 c:\wxwidgets-3.0.2\include\wx\cocoa\taskbar.h
 	"wx/icon.h"
+
+1432487748 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\taskbar\taskbar.h
+	<wx/wx.h>
+	<wx/taskbar.h>
+	"../App/MyFrame.h"
+	"../Menu/MyMenu.h"
+
+1432490152 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\taskbar\taskbar.cpp
+	"TaskBar.h"
 

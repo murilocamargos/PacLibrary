@@ -4,14 +4,17 @@
 #include <wx/wx.h>
 #include "../Menu/MyMenu.h"
 #include <wx/taskbar.h>
+//#include <sqlite3.h>
 
 class MyFrame : public wxFrame {
     private:
         MyMenu *menu;
         wxApp *app;
     public:
+
         MyFrame(const wxString& title, const wxPoint& position,
             const wxSize& size, wxApp *app);
+        bool flag;//Define se a janela fechará ou minimizará (false e true, respectivamente)
         void OnMenuAboutLangPT(wxCommandEvent &);
         void OnMenuAboutLangEN(wxCommandEvent &);
         void OnMenuAboutLangFR(wxCommandEvent &);
@@ -20,6 +23,10 @@ class MyFrame : public wxFrame {
         void OnMenuFileSave(wxCommandEvent &);
         void OnMenuFileOpen(wxCommandEvent &);
         void OnMenuFileQuit(wxCommandEvent &);
+
+        MyMenu *Get_Menu();
+        void HideOnTaskBar(wxIconizeEvent &event);
+        wxApp *Get_App();
 
         enum {
             MENU_ABOUT_LANG_EN,
