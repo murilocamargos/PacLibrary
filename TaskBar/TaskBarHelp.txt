@@ -1,0 +1,38 @@
+***********Documentação TaskBar class - Versão 1
+
+Métodos Públicos
+
+->TaskBar():
+Construtor da class, nele se atribuem valores padrão às variáveis;
+
+->int Set_Icon(wxIcon icone1, wxString tip):
+Esse método adiciona um ícone passado por parâmetro ao TaskBar e uma breve descrição, esta aparece quando o usuário descansa o mouse sobre o ícone. Retorna 0 caso tenha funcionado corretamente e 1 se o ícone e/ou descrição não puderam ser configurados. Além disso, neste último caso aparecerá uma mensagme de erro com aviso.
+
+->int Set_Icon(wxIcon icone1):
+Mesma funcionalidade da função acima, exceto por receber não receber o parâmetro tip. Neste caso, apenas o ícone será configurado. Retorna 0 em caso de sucesso e 1 mais a mensagem de erro, caso contrário.
+
+->void ReativaApp(wxTaskBarIconEvent& event);
+Método para inicializar um novo aplicativo pela barra de tarefas, depois que aquele foi minimizado.
+
+->void CloseTaskBar();
+Destroi a barra de tarefas, já que ela será novamente construída pelo novo aplicativo. Ou seja, só haverá ícone na barra de tarefas com o aplicativo estando minimizado.
+
+->int Set_Frame(MyFrame *frame);
+Inicializa as variáveis 'frame' e 'app' da classe a partir do parâmetro fornecido.
+
+Métodos Públicos Herdados da TaskBarIcon que foram utilizados
+
+->void Destroy():
+Destroi o objeto wxTaskBarIcon, removendo o ícone se não o tiver sido ainda. Isso ocorrerá na próxima iteração de loop para permitir que a barra de tarefas processe algum evento pendente antes de ser destruída.
+
+->bool IsIconInstalled():
+Retorna true se SetIcon() for chamado sem um RemoveIcon() subsequente.
+
+->bool IsOk():
+Retorna true se o objeto foi inicializado com sucesso.
+
+->virtual bool SetIcon(const wxIcon &icon, const wxString &tooltip=wxEmptyString):
+Insere o ícone e uma ferramenta de dica, sendo este último opcional.
+
+->static bool IsAvailable():
+Retorna true caso o seu 'system tray' esteja disponível no ambiente do desktop para rodar o app 'por baixo'.

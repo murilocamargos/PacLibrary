@@ -53,6 +53,8 @@
 		<Unit filename="Menu/MyMenu.h" />
 		<Unit filename="SplashScreen/SplashScreen.cpp" />
 		<Unit filename="SplashScreen/SplashScreen.h" />
+		<Unit filename="TaskBar/TaskBar.cpp" />
+		<Unit filename="TaskBar/TaskBar.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

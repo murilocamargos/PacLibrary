@@ -7,3 +7,4 @@ http://docs.wxwidgets.org/trunk/classwx_locale.html#a1e9eb6387646a94c65d1493b5be
 
 https://wiki.wxwidgets.org/Embedding_PNG_Images
 https://github.com/wxWidgets/wxWidgets/blob/master/samples/taskbar/tbtest.cpp
+
