@@ -1,7 +1,6 @@
 #include "MyApp.h"
 #include <wx/config.h>
 #include "../SplashScreen/SplashScreen.h"
-#include <wx/imagpng.h>
 
 IMPLEMENT_APP(MyApp)
 
@@ -12,12 +11,12 @@ IMPLEMENT_APP(MyApp)
 
 bool MyApp::OnInit()
 {
-    //wxImage::AddHandler(new wxPNGHandler);
     SplashScreen *splash = new SplashScreen();
     splash->LoadImage(wxBITMAP(SPLBMP));
     splash->SetTime(2000);
     splash->Show();
-    ///TaskBar
+
+    // TaskBar
     taskbar = new TaskBar();
     this->SetLocale(this->LoadLang());
     return this->CreateGUI();
@@ -28,21 +27,29 @@ bool MyApp::OnInit()
  * ele  irá  guardar  o  último  idioma  definido  pelo  usuário num registro do
  * windows.
  */
-int MyApp::OnExit() //Fecha aplicaçao
+int MyApp::OnExit()
 {
-    if(frame->flag)//Minimizada a tela
+    // Minimizada a tela
+    if(frame->flag)
     {
-        this->SetExitOnFrameDelete(false);//Aplicaçao nao irá fechar quando o último frame for deletado.
-        taskbar->SetIcon(wxICON(APP_ICON));//Taskbar visivel para reiniar aplicaçao.
+        // Aplicaçao nao irá fechar quando o último frame for deletado.
+        this->SetExitOnFrameDelete(false);
+        // Taskbar visivel para reiniar aplicaçao.
+        taskbar->SetIcon(wxICON(APP_ICON));
     }
-    else//Destroi a aplicação
+    // Destroi a aplicação
+    else
     {
-        this->SetExitOnFrameDelete(true);//Aplicaçao irá fechar quando o último frame for deletado.
+        // Aplicaçao irá fechar quando o último frame for deletado.
+        this->SetExitOnFrameDelete(true);
     }
+
+    // Salva ultimo idioma utilizado pelo usuário
     wxConfig config(GetAppName());
     long language = this->locale->GetLanguage();
     config.Write(wxT("wxTranslation_Language"), language);
     config.Flush();
+
     return 0;
 }
 

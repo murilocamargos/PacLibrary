@@ -58,7 +58,7 @@ MyFrame::MyFrame(const wxString& title, const wxPoint& position,
 
     //StatusBar
     CreateStatusBar(3);
-    SetStatusText(_("Welcome Library's user!!"),1);
+    SetStatusText(_("Welcome Library's user!"),1);
 
 };
 
@@ -112,7 +112,7 @@ void MyFrame::OnMenuFileQuit(wxCommandEvent& event)
         app->OnExit();
         Close(true);
     }
-    else if(answer == wxNO) ///Minimiza
+    else if(answer == wxNO) //Minimiza
     {
         flag = true;
         app->OnExit();
