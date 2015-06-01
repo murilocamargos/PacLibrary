@@ -1,3 +1,5 @@
+#ifndef __TASKBAR_H__
+#define __TASKBAR_H__
 /**
     Classe para criar um ícone de taskbar e atribuir funções a ele
 */
@@ -23,3 +25,5 @@ public:
 
     DECLARE_EVENT_TABLE();
 };
+
+#endif

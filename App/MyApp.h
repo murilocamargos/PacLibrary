@@ -1,7 +1,9 @@
 #ifndef _MYAPP_H
 #define _MYAPP_H
 
+#include <stdio.h>
 #include <wx/wx.h>
+#include "../BD/BD.h"
 #include "MyFrame.h"
 #include "../TaskBar/TaskBar.h" //Criar um arquivo de includes
 
@@ -14,6 +16,7 @@ class MyApp : public wxApp
 private:
     MyFrame *frame;
     TaskBar *taskbar;
+    MyBD *database;
 public:
     wxLocale *locale;
 

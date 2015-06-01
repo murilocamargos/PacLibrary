@@ -46,6 +46,8 @@
 		<Unit filename="App/MyApp.h" />
 		<Unit filename="App/MyFrame.cpp" />
 		<Unit filename="App/MyFrame.h" />
+		<Unit filename="BD/BD.cpp" />
+		<Unit filename="BD/BD.h" />
 		<Unit filename="Images/resources.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
