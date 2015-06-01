@@ -1,10 +1,11 @@
-#ifndef __BD_H__
-#define __BD_H__
+#ifndef _DATABASE_H
+#define _DATABASE_H
 
 #include <string>
 #include <vector>
 #include <stdio.h>
-#include "../SQLite/sqlite3.h"
+
+#include "sqlite3.h"
 
 ///Exemplo de uso ao final deste arquivo !!
 class MyBD
@@ -15,10 +16,12 @@ private:
     //char *filename;
 public:
     MyBD();//Open the database
+    ~MyBD();
 
     bool InsertinFile(char *table,char *columns, char *values);
     bool ErasefromFile(char *table, char *conditions);
     int Query(char * columns,char *table, char *condition);
+    int NumRows(char *table, char *conds);
     bool CloseDB();
     int The_Callback(void *a_param, int argc, char **argv, char **column);
 };
@@ -36,4 +39,4 @@ for(vector<vector<string> >::iterator it = result.begin(); it < result.end(); ++
 db->close();
 */
 
-#endif // __BD_H__
+#endif

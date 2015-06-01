@@ -15,7 +15,7 @@ bool MyApp::OnInit()
     splash->LoadImage(wxBITMAP(SPLBMP));
     splash->SetTime(2000);
     splash->Show();
-    //Banco de Dados
+
     database = new MyBD();
 
     // TaskBar

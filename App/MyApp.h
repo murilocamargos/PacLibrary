@@ -3,9 +3,9 @@
 
 #include <stdio.h>
 #include <wx/wx.h>
-#include "../BD/BD.h"
 #include "MyFrame.h"
 #include "../TaskBar/TaskBar.h" //Criar um arquivo de includes
+#include "../Database/Database.h"
 
 /**
  * Esta  é  a definição da classe que inicializa o frame da aplicação utilizando

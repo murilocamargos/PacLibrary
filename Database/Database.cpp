@@ -1,4 +1,6 @@
-#include "BD.h"
+#include "Database.h"
+
+#include <stdlib.h>
 #include <iostream>
 
 using namespace std;
@@ -7,12 +9,16 @@ MyBD::MyBD()
 {
     rows = 0;
     int aux;
-    aux = sqlite3_open("C:\\Users\\Luana\\Documents\\Estudos\\Faculdade\\PAC\\pac-tpii\\library",&db);
+    aux = sqlite3_open("library", &db);
     if(aux)
     {
         fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
         sqlite3_close(db);
     }
+}
+
+MyBD::~MyBD() {
+    sqlite3_close(db);
 }
 
 bool MyBD::InsertinFile(char *table,char *columns, char *values)
@@ -30,6 +36,28 @@ bool MyBD::ErasefromFile(char *table, char *conditions)
     sqlite3_exec(db,consulta, NULL, NULL, NULL);
     return true;
 }
+
+// tirado de http://www.codeproject.com/Tips/378808/Accessing-a-SQLite-Database-with-Cplusplus
+int MyBD::NumRows(char *table, char *conds) {
+    char query[500];
+    sprintf(query, "SELECT COUNT(*) FROM %s %s", table, conds);
+
+    sqlite3_stmt *statement;
+
+    if ( sqlite3_prepare(db, query, -1, &statement, 0 ) == SQLITE_OK )
+    {
+        int res = sqlite3_step(statement);
+
+        if ( res == SQLITE_ROW )
+        {
+            string s = (char*)sqlite3_column_text(statement, 0);
+            return atoi(s.c_str());
+        }
+    }
+
+    return 0;
+}
+
 int MyBD::Query(char *columns, char *table, char *condition)
 {
     sqlite3_stmt *statement;
@@ -78,5 +106,5 @@ int MyBD::Query(char *columns, char *table, char *condition)
 }
 bool MyBD::CloseDB()
 {
-    sqlite3 close();
+    sqlite3_close(db);
 }
