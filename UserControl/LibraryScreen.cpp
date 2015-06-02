@@ -59,7 +59,7 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
     //StatusBar
     wxString msg = _("Welcome ") + wxString(user_info["nome"]) + " :)";
     CreateStatusBar(2);
-    SetStatusText(msg, 0);
+    SetStatusText(msg, 1);
 
 };
 

@@ -3346,7 +3346,7 @@
 	<wx/wx.h>
 	<map>
 
-1433262889 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.cpp
+1433263918 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.cpp
 	"LoginScreen.h"
 	"../Database/SQLiteHandler.h"
 	"../Database/SQLHandler.h"
@@ -3369,14 +3369,14 @@
 	"../Database/SQLiteHandler.h"
 	"../Database/SQLHandler.h"
 
-1433263391 c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.h
+1433263905 c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.h
 	<wx/wx.h>
 	<map>
 	<string>
 	"../Database/SQLHandler.h"
 	"../Database/SQLiteHandler.h"
 
-1433263509 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.cpp
+1433263902 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.cpp
 	"Log.h"
 	<stdlib.h>
 	<sstream>
