@@ -16,7 +16,7 @@ private:
 public:
     std::vector<std::map<std::string, std::string> > rows;
 
-    SQLiteHandler(std::string dbFile);
+    SQLiteHandler();
     ~SQLiteHandler();
 
     void CloseDB();

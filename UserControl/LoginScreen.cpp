@@ -3,6 +3,7 @@
 #include "../Database/SQLHandler.h"
 #include "../Encryption/SHA256.h"
 #include "../App/MyApp.h"
+#include "../Log/Log.h"
 
 #include <string>
 
@@ -132,10 +133,12 @@ void LoginScreen::Login(wxCommandEvent& event) {
 	}
 
     // Executa a query
-    SQLiteHandler *db = new SQLiteHandler(((MyApp*)app)->dbName);
+    SQLiteHandler *db = new SQLiteHandler();
     db->Select(sql);
 
     if (db->rows.size() > 0) {
+        Log("4", db->rows[0]["user_id"]);
+
         ((MyApp*)app)->OpenFrame(db->rows[0]["user_id"], choosenLang);
         Destroy();
     } else {

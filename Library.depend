@@ -3270,7 +3270,7 @@
 	<vector>
 	<map>
 
-1433256743 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.h
+1433262381 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.h
 	<string>
 	<vector>
 	<map>
@@ -3331,7 +3331,7 @@
 	<unicode/ubrk.h>
 	<unicode/utf16.h>
 
-1433257215 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.cpp
+1433263634 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.cpp
 	"SQLiteHandler.h"
 	<stdlib.h>
 	<iostream>
@@ -3346,12 +3346,13 @@
 	<wx/wx.h>
 	<map>
 
-1433257184 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.cpp
+1433262889 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.cpp
 	"LoginScreen.h"
 	"../Database/SQLiteHandler.h"
 	"../Database/SQLHandler.h"
 	"../Encryption/SHA256.h"
 	"../App/MyApp.h"
+	"../Log/Log.h"
 	<string>
 
 1433262062 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.h
@@ -3362,9 +3363,21 @@
 	<string>
 	<map>
 
-1433262002 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.cpp
+1433262436 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.cpp
 	"LibraryScreen.h"
 	"../App/MyApp.h"
 	"../Database/SQLiteHandler.h"
 	"../Database/SQLHandler.h"
+
+1433263391 c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.h
+	<wx/wx.h>
+	<map>
+	<string>
+	"../Database/SQLHandler.h"
+	"../Database/SQLiteHandler.h"
+
+1433263509 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.cpp
+	"Log.h"
+	<stdlib.h>
+	<sstream>
 

@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <iostream>
 
-SQLiteHandler::SQLiteHandler(std::string dbFile) {
-    this->isOpen = OpenDB(dbFile);
+SQLiteHandler::SQLiteHandler() {
+    this->isOpen = OpenDB("library");
 }
 
 bool SQLiteHandler::OpenDB(std::string dbFile) {
@@ -46,7 +46,11 @@ int SQLiteHandler::NumRows(SQLHandler *sql) {
 
 int SQLiteHandler::Exec(std::string sql) {
     sqlite3_stmt *statement;
-    return sqlite3_prepare_v2(this->db, sql.c_str(), -1, &statement, 0);
+    if (sqlite3_prepare_v2(this->db, sql.c_str(), -1, &statement, 0) == SQLITE_OK) {
+        sqlite3_step(statement);
+        sqlite3_finalize(statement);
+    }
+    return 0;
 }
 
 int SQLiteHandler::Select(SQLHandler *sql) {

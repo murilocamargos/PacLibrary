@@ -22,7 +22,7 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
     SQLHandler *sql = new SQLHandler();
     sql->Table("usuarios")->Where("user_id", uid);
     // Executa a query
-    SQLiteHandler *db = new SQLiteHandler(((MyApp*)app)->dbName);
+    SQLiteHandler *db = new SQLiteHandler();
     db->Select(sql);
     user_info = db->rows[0];
 
@@ -53,7 +53,6 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
                            _("Get Help."));
     this->menu->AddSubMenu(help, -1, _("About\tF2"),
                            _("Get to know us better!"));
-    this->menu->Separator(help);
 
     SetMenuBar(this->menu);
 
