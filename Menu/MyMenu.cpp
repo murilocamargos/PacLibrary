@@ -11,7 +11,7 @@ MyMenu::MyMenu() : wxMenuBar() {
 void MyMenu::AddMenu(wxString label, bool append) {
     wxMenu *menu = new wxMenu();
     menus[label] = menu;
-    
+
     if (append)
         this->Append(menu, label);
 }
@@ -21,10 +21,10 @@ void MyMenu::AddMenu(wxString label, bool append) {
  */
 void MyMenu::AddSubMenu(wxString menuLabel, int ID, wxString label,
     wxString help) {
-        
+
     if (menus.find(menuLabel) != menus.end())
         menus[menuLabel]->Append(ID, label, help);
-        
+
 }
 
 /**
@@ -45,35 +45,18 @@ void MyMenu::Separator(wxString menuLabel) {
 }
 
 /**
- * Tenta  modificar  o  idioma da aplicação e retorna mensagens de erro caso não 
- * consiga.
- */
-wxString MyMenu::ChangeAppLang(wxApp* app, long lang) {
-    MyApp* myApp = (MyApp*) app;
-    
-    if (!wxLocale::IsAvailable(lang))
-        return _("This language is not supported by your system.");
-    
-    if (myApp->locale->GetLanguage() == lang)
-        return _("This language is already selected!");
-    
-    myApp->ChangeLang(lang);
-    return "";
-}
-
-/**
  * Abre  um `wxFileDialog` com titulo, extensões e diretório padrão passados por
  * parâmetro. Retorna uma `wxString` do caminho completo do arquivo selecionado.
  */
 wxString MyMenu::FilePath(wxString title, wxString extensions,
     wxString defDir) {
-        
+
     wxFileDialog fd(this, title, defDir, "", extensions,
         wxFD_OPEN | wxFD_FILE_MUST_EXIST);
-    
+
     if (fd.ShowModal() == wxID_CANCEL)
         return "";
-    
+
     return fd.GetPath();
-    
+
 }

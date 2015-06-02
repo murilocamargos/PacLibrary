@@ -51,6 +51,7 @@ int SQLiteHandler::Exec(std::string sql) {
 
 int SQLiteHandler::Select(SQLHandler *sql) {
     sqlite3_stmt *statement;
+    std::string col_name, col_val;
 
     int prepare = sqlite3_prepare_v2(this->db, sql->Select().c_str(), -1, &statement, 0);
 
@@ -59,9 +60,11 @@ int SQLiteHandler::Select(SQLHandler *sql) {
         while(true) {
             // Insere cada linha (vetor de strings) no vetor `rows`
             if(sqlite3_step(statement) == SQLITE_ROW) {
-                std::vector<std::string> row;
+                std::map<std::string, std::string> row;
                 for(int col = 0; col < cols; col++) {
-                    row.push_back((char*) sqlite3_column_text(statement, col));
+                    col_name = std::string((char*) sqlite3_column_name(statement, col));
+                    col_val = std::string((char*) sqlite3_column_text(statement, col));
+                    row[col_name] = col_val;
                 }
                 this->rows.push_back(row);
             } else {

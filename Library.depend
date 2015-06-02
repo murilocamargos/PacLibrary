@@ -3014,24 +3014,24 @@
 	"MyFrame.h"
 	"MyApp.h"
 
-1433249105 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.cpp
+1433261793 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.cpp
 	"MyApp.h"
-	<wx/config.h>
+	"../UserControl/LoginScreen.h"
+	"../UserControl/LibraryScreen.h"
 	"../SplashScreen/SplashScreen.h"
 
-1433249070 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.h
+1433256053 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.h
 	<stdio.h>
+	<string>
 	<wx/wx.h>
-	"MyFrame.h"
-	"../TaskBar/TaskBar.h"
-	"../Database/SQLiteHandler.h"
+	<wx/config.h>
 
-1432643370 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myframe.h
+1433249537 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myframe.h
 	<wx/wx.h>
 	"../Menu/MyMenu.h"
 	<wx/taskbar.h>
 
-1432219168 c:\users\murilocamargos\documents\university\pac\pac-tpii\menu\mymenu.h
+1433250478 c:\users\murilocamargos\documents\university\pac\pac-tpii\menu\mymenu.h
 	<wx/wx.h>
 	<map>
 
@@ -3044,14 +3044,14 @@
 	"wx/frame.h"
 	"wx/timer.h"
 
-1432656163 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myframe.cpp
+1433249919 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myframe.cpp
 	"MyFrame.h"
 	"MyApp.h"
 
 1432226660 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\images\resources.rc
 	"wx/msw/wx.rc"
 
-1432219168 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\menu\mymenu.cpp
+1433250468 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\menu\mymenu.cpp
 	"MyMenu.h"
 	"../App/MyApp.h"
 
@@ -3099,11 +3099,9 @@
 1433008280 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\taskbar\taskbar.cpp
 	"TaskBar.h"
 
-1433182012 c:\users\murilocamargos\documents\university\pac\pac-tpii\taskbar\taskbar.h
+1433261662 c:\users\murilocamargos\documents\university\pac\pac-tpii\taskbar\taskbar.h
 	<wx/wx.h>
 	<wx/taskbar.h>
-	"../App/MyFrame.h"
-	"../Menu/MyMenu.h"
 
 1432639138 c:\users\murilocamargos\documents\university\pac\pac-tpii\sqlite\sqlite3.h
 	<stdarg.h>
@@ -3161,7 +3159,7 @@
 	<unicode/ubrk.h>
 	<unicode/utf16.h>
 
-1432643370 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\taskbar\taskbar.cpp
+1433261652 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\taskbar\taskbar.cpp
 	"TaskBar.h"
 
 1432660117 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\sqlite\sqlite3.c
@@ -3272,9 +3270,10 @@
 	<vector>
 	<map>
 
-1433249247 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.h
+1433256743 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.h
 	<string>
 	<vector>
+	<map>
 	<stdio.h>
 	"SQLHandler.h"
 	"sqlite3.h"
@@ -3332,8 +3331,40 @@
 	<unicode/ubrk.h>
 	<unicode/utf16.h>
 
-1433249160 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.cpp
+1433257215 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.cpp
 	"SQLiteHandler.h"
 	<stdlib.h>
 	<iostream>
+
+1433249749 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\login.h
+	<wx/wx.h>
+
+1432408680 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\login.cpp
+	"Login.h"
+
+1433254524 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.h
+	<wx/wx.h>
+	<map>
+
+1433257184 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.cpp
+	"LoginScreen.h"
+	"../Database/SQLiteHandler.h"
+	"../Database/SQLHandler.h"
+	"../Encryption/SHA256.h"
+	"../App/MyApp.h"
+	<string>
+
+1433262062 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.h
+	<wx/wx.h>
+	<wx/taskbar.h>
+	"../Menu/MyMenu.h"
+	"../TaskBar/TaskBar.h"
+	<string>
+	<map>
+
+1433262002 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.cpp
+	"LibraryScreen.h"
+	"../App/MyApp.h"
+	"../Database/SQLiteHandler.h"
+	"../Database/SQLHandler.h"
 

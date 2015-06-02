@@ -1,5 +1,7 @@
 #include "MyApp.h"
-#include <wx/config.h>
+
+#include "../UserControl/LoginScreen.h"
+#include "../UserControl/LibraryScreen.h"
 #include "../SplashScreen/SplashScreen.h"
 
 IMPLEMENT_APP(MyApp)
@@ -16,42 +18,20 @@ bool MyApp::OnInit()
     splash->SetTime(2000);
     splash->Show();
 
-    // TaskBar
-    taskbar = new TaskBar();
+    // Database
+    this->dbName = "library";
+
     this->SetLocale(this->LoadLang());
-    return this->CreateGUI();
-}
 
-/**
- * Este  método  pode ser visto como o destrutor do aplicativo. Ao ser acionado,
- * ele  irá  guardar  o  último  idioma  definido  pelo  usuário num registro do
- * windows.
- */
-int MyApp::OnExit()
-{
-    // Minimizada a tela
-    if(frame->flag)
-    {
-        // Aplicaçao nao irá fechar quando o último frame for deletado.
-        this->SetExitOnFrameDelete(false);
-        // Taskbar visivel para reiniar aplicaçao.
-        taskbar->SetIcon(wxICON(APP_ICON));
-    }
-    // Destroi a aplicação
-    else
-    {
-        // Aplicaçao irá fechar quando o último frame for deletado.
-        this->SetExitOnFrameDelete(true);
-    }
+    // Tela de login
+    LoginScreen *login = new LoginScreen(_("Login"), this);
 
-    // Salva ultimo idioma utilizado pelo usuário
-    this->database->CloseDB();
-    wxConfig config(GetAppName());
-    long language = this->locale->GetLanguage();
-    config.Write(wxT("wxTranslation_Language"), language);
-    config.Flush();
+    login->SetIcon(wxICON(APP_ICON));
+    login->Show(TRUE);
 
-    return 0;
+    SetTopWindow(login);
+
+    return true;
 }
 
 /**
@@ -87,36 +67,19 @@ bool MyApp::SetLocale(long lang)
     return this->locale->IsOk();
 }
 
-/**
- * Este método é responsável pela criação e exibição do frame principal.
- */
-bool MyApp::CreateGUI()
-{
-    this->frame = new MyFrame(_("Library"), wxPoint(100, 100), wxSize(800, 600),
-                              this);
-    this->frame->SetIcon(wxICON(APP_ICON));
-    this->frame->Show(TRUE);
+bool MyApp::OpenFrame(std::string uid, long lang) {
+    this->SetLocale(lang);
 
-    SetTopWindow(this->frame);
+    LibraryScreen *frame = new LibraryScreen(_("Library"), this, uid);
+    frame->SetIcon(wxICON(APP_ICON));
+    frame->Show(TRUE);
 
-    taskbar->Set_Frame(this->frame);
+    /** \brief
+     *
+     * \param frame
+     *
+     */
+    SetTopWindow(frame);
+
     return true;
-}
-
-bool MyApp::ChangeLang(long lang)
-{
-    // Para  mudar  o  idioma  da  aplicação  em  tempo  de  execução, a solução
-    // encontrada  foi  destruir  o  frame  principal  e  criar outro com o novo
-    // idioma.
-
-    if (this->SetLocale(lang))
-    {
-        SetTopWindow(NULL);
-        this->frame->Destroy();
-        // Recria o frame com o novo idioma.
-        this->CreateGUI();
-        return true;
-    }
-
-    return false;
 }

@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <map>
 #include <stdio.h>
 
 #include "SQLHandler.h"
@@ -13,7 +14,7 @@ private:
     sqlite3 *db;
     bool isOpen;
 public:
-    std::vector<std::vector<std::string> > rows;
+    std::vector<std::map<std::string, std::string> > rows;
 
     SQLiteHandler(std::string dbFile);
     ~SQLiteHandler();
