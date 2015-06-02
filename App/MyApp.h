@@ -4,8 +4,7 @@
 #include <stdio.h>
 #include <wx/wx.h>
 #include "MyFrame.h"
-#include "../TaskBar/TaskBar.h" //Criar um arquivo de includes
-#include "../Database/Database.h"
+#include "../TaskBar/TaskBar.h"
 
 /**
  * Esta  é  a definição da classe que inicializa o frame da aplicação utilizando
@@ -16,7 +15,6 @@ class MyApp : public wxApp
 private:
     MyFrame *frame;
     TaskBar *taskbar;
-    MyBD *database;
 public:
     wxLocale *locale;
 

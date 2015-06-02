@@ -1,24 +1,24 @@
-#include "SqlHandler.h"
+#include "SQLHandler.h"
 #include <iostream>
-SqlHandler::SqlHandler() {
+SQLHandler::SQLHandler() {
 
 }
 
-SqlHandler* SqlHandler::Table(std::string tableName) {
+SQLHandler* SQLHandler::Table(std::string tableName) {
     this->_table = tableName;
     return this;
 }
 
-SqlHandler* SqlHandler::Set(std::string column, std::string value) {
+SQLHandler* SQLHandler::Set(std::string column, std::string value) {
     this->_vars[column] = value;
     return this;
 }
 
-SqlHandler* SqlHandler::Column(std::string columnName) {
+SQLHandler* SQLHandler::Column(std::string columnName) {
     this->_column.push_back(columnName);
     return this;
 }
-std::string SqlHandler::GetColumn() {
+std::string SQLHandler::GetColumn() {
     std::string clm = "";
     int sz = this->_column.size();
 
@@ -33,33 +33,33 @@ std::string SqlHandler::GetColumn() {
     return clm.substr(0, clm.size() - 2);
 }
 
-std::string SqlHandler::DefineWhere(std::string column, std::string signal, std::string value) {
+std::string SQLHandler::DefineWhere(std::string column, std::string signal, std::string value) {
     std::string whr = column + " " + signal + " '" + value + "'";
 
     return whr;
 }
 
-SqlHandler* SqlHandler::Where(std::string column, std::string value) {
+SQLHandler* SQLHandler::Where(std::string column, std::string value) {
     this->_where.push_back("AND " + this->DefineWhere(column, "=", value));
     return this;
 }
 
-SqlHandler* SqlHandler::Where(std::string column, std::string signal, std::string value) {
+SQLHandler* SQLHandler::Where(std::string column, std::string signal, std::string value) {
     this->_where.push_back("AND " + this->DefineWhere(column, signal, value));
     return this;
 }
 
-SqlHandler* SqlHandler::WhereOr(std::string column, std::string value) {
+SQLHandler* SQLHandler::WhereOr(std::string column, std::string value) {
     this->_where.push_back("OR  " + this->DefineWhere(column, "=", value));
     return this;
 }
 
-SqlHandler* SqlHandler::WhereOr(std::string column, std::string signal, std::string value) {
+SQLHandler* SQLHandler::WhereOr(std::string column, std::string signal, std::string value) {
     this->_where.push_back("OR  " + this->DefineWhere(column, signal, value));
     return this;
 }
 
-std::string SqlHandler::GetWhere() {
+std::string SQLHandler::GetWhere() {
     std::string whr = "WHERE ";
     int sz = this->_where.size();
 
@@ -75,7 +75,7 @@ std::string SqlHandler::GetWhere() {
     return whr;
 }
 
-std::string SqlHandler::Select() {
+std::string SQLHandler::Select() {
     std::string sql;
 
     sql = "SELECT " + this->GetColumn() + " FROM " + this->_table + " " + this->GetWhere();
@@ -84,7 +84,7 @@ std::string SqlHandler::Select() {
 }
 
 
-std::string SqlHandler::Delete() {
+std::string SQLHandler::Delete() {
     std::string sql;
 
     sql = "DELETE FROM " + this->_table + " " + this->GetWhere();
@@ -92,7 +92,7 @@ std::string SqlHandler::Delete() {
     return sql;
 }
 
-std::string SqlHandler::Insert() {
+std::string SQLHandler::Insert() {
     std::string sql, cols = "", vals = "";
     std::map<std::string, std::string>::iterator it;
 
@@ -109,7 +109,7 @@ std::string SqlHandler::Insert() {
 }
 
 
-std::string SqlHandler::Update() {
+std::string SQLHandler::Update() {
     std::string sql = "UPDATE " + this->_table + " SET ";
     std::map<std::string, std::string>::iterator it;
 
@@ -118,4 +118,8 @@ std::string SqlHandler::Update() {
     }
 
     return sql.substr(0, sql.size() - 2) + " " + this->GetWhere();
+}
+
+std::string SQLHandler::Count() {
+    return "SELECT COUNT(*) FROM " + this->_table + " " + this->GetWhere();
 }

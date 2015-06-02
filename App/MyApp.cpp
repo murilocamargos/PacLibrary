@@ -16,8 +16,6 @@ bool MyApp::OnInit()
     splash->SetTime(2000);
     splash->Show();
 
-    database = new MyBD();
-
     // TaskBar
     taskbar = new TaskBar();
     this->SetLocale(this->LoadLang());

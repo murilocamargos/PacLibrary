@@ -3014,17 +3014,17 @@
 	"MyFrame.h"
 	"MyApp.h"
 
-1433187700 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.cpp
+1433249105 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.cpp
 	"MyApp.h"
 	<wx/config.h>
 	"../SplashScreen/SplashScreen.h"
 
-1433187371 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.h
+1433249070 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.h
 	<stdio.h>
 	<wx/wx.h>
 	"MyFrame.h"
 	"../TaskBar/TaskBar.h"
-	"../Database/Database.h"
+	"../Database/SQLiteHandler.h"
 
 1432643370 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myframe.h
 	<wx/wx.h>
@@ -3263,12 +3263,77 @@
 	<stdlib.h>
 	<iostream>
 
-1433187085 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlhandler.cpp
-	"SqlHandler.h"
+1433247917 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlhandler.cpp
+	"SQLHandler.h"
 	<iostream>
 
-1433187203 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlhandler.h
+1433247876 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlhandler.h
 	<string>
 	<vector>
 	<map>
+
+1433249247 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.h
+	<string>
+	<vector>
+	<stdio.h>
+	"SQLHandler.h"
+	"sqlite3.h"
+
+1432639156 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlite3.c
+	<vxWorks.h>
+	<pthread.h>
+	"mingw.h"
+	"_mingw.h"
+	<stdarg.h>
+	"config.h"
+	<stdint.h>
+	<inttypes.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<stddef.h>
+	<TargetConditionals.h>
+	<ctype.h>
+	<time.h>
+	<sys/sysctl.h>
+	<malloc/malloc.h>
+	<libkern/OSAtomic.h>
+	<malloc.h>
+	<pthread.h>
+	"windows.h"
+	<sys/cygwin.h>
+	<errno.h>
+	<process.h>
+	<math.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/time.h>
+	<errno.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<sys/file.h>
+	<sys/param.h>
+	<semaphore.h>
+	<limits.h>
+	<sys/mount.h>
+	<utime.h>
+	<sys/dcmd_blk.h>
+	<sys/statvfs.h>
+	<dlfcn.h>
+	<tcl.h>
+	"sqlite3rtree.h"
+	<unicode/utypes.h>
+	<unicode/uregex.h>
+	<unicode/ustring.h>
+	<unicode/ucol.h>
+	<unicode/ubrk.h>
+	<unicode/utf16.h>
+
+1433249160 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.cpp
+	"SQLiteHandler.h"
+	<stdlib.h>
+	<iostream>
 
