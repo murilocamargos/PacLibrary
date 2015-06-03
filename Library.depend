@@ -3014,26 +3014,21 @@
 	"MyFrame.h"
 	"MyApp.h"
 
-1433261793 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.cpp
+1433353099 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.cpp
+	"../LibraryInc.h"
 	"MyApp.h"
 	"../UserControl/LoginScreen.h"
 	"../UserControl/LibraryScreen.h"
 	"../SplashScreen/SplashScreen.h"
 
-1433256053 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.h
-	<stdio.h>
-	<string>
-	<wx/wx.h>
-	<wx/config.h>
+1433353877 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myapp.h
 
 1433249537 c:\users\murilocamargos\documents\university\pac\pac-tpii\app\myframe.h
 	<wx/wx.h>
 	"../Menu/MyMenu.h"
 	<wx/taskbar.h>
 
-1433250478 c:\users\murilocamargos\documents\university\pac\pac-tpii\menu\mymenu.h
-	<wx/wx.h>
-	<map>
+1433357902 c:\users\murilocamargos\documents\university\pac\pac-tpii\menu\mymenu.h
 
 1412518750 c:\wxwidgets-3.0.2\include\wx\splash.h
 	"wx/generic/splash.h"
@@ -3265,10 +3260,7 @@
 	"SQLHandler.h"
 	<iostream>
 
-1433247876 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlhandler.h
-	<string>
-	<vector>
-	<map>
+1433357418 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlhandler.h
 
 1433262381 c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.h
 	<string>
@@ -3369,15 +3361,22 @@
 	"../Database/SQLiteHandler.h"
 	"../Database/SQLHandler.h"
 
-1433263905 c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.h
-	<wx/wx.h>
-	<map>
-	<string>
-	"../Database/SQLHandler.h"
-	"../Database/SQLiteHandler.h"
+1433357821 c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.h
 
 1433263902 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.cpp
 	"Log.h"
 	<stdlib.h>
 	<sstream>
+
+1433356867 c:\users\murilocamargos\documents\university\pac\pac-tpii\libraryinc.h
+	<string>
+	<vector>
+	<map>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+	<wx/wx.h>
+	<wx/config.h>
+	<wx/splash.h>
+	<wx/taskbar.h>
 

@@ -1,3 +1,5 @@
+#include "../LibraryInc.h"
+
 #include "LibraryScreen.h"
 
 #include "../App/MyApp.h"

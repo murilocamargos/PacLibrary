@@ -1,3 +1,5 @@
+#include "../LibraryInc.h"
+
 #include "MyApp.h"
 
 #include "../UserControl/LoginScreen.h"
@@ -6,20 +8,12 @@
 
 IMPLEMENT_APP(MyApp)
 
-/**
- * Este  método  irá  inicializar a aplicação com um idioma que será carregado a
- * partir do registro do windows.
- */
-
 bool MyApp::OnInit()
 {
     SplashScreen *splash = new SplashScreen();
     splash->LoadImage(wxBITMAP(SPLBMP));
     splash->SetTime(2000);
     splash->Show();
-
-    // Database
-    this->dbName = "library";
 
     this->SetLocale(this->LoadLang());
 
@@ -34,17 +28,11 @@ bool MyApp::OnInit()
     return true;
 }
 
-/**
- * Este  método  tentará carregar o último idioma definido pelo usuário que está
- * salvo  no  registro  do  windows.  Caso não consiga, utiliza o idioma padrão:
- * Português.
- */
 long MyApp::LoadLang()
 {
     wxConfig config(GetAppName());
     long language;
-    if(!config.Read(wxT("wxTranslation_Language"), &language,
-                    wxLANGUAGE_PORTUGUESE))
+    if(!config.Read(wxT("wxTranslation_Language"), &language, wxLANGUAGE_PORTUGUESE))
     {
         language = wxLANGUAGE_PORTUGUESE;
     }
@@ -67,18 +55,14 @@ bool MyApp::SetLocale(long lang)
     return this->locale->IsOk();
 }
 
-bool MyApp::OpenFrame(std::string uid, long lang) {
+bool MyApp::OpenFrame(std::string uid, long lang)
+{
     this->SetLocale(lang);
 
     LibraryScreen *frame = new LibraryScreen(_("Library"), this, uid);
     frame->SetIcon(wxICON(APP_ICON));
     frame->Show(TRUE);
 
-    /** \brief
-     *
-     * \param frame
-     *
-     */
     SetTopWindow(frame);
 
     return true;

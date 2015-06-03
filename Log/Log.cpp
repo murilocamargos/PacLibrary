@@ -1,22 +1,27 @@
-#include "Log.h"
-#include <stdlib.h>
-#include <sstream>
+#include "../LibraryInc.h"
 
-Log::Log(std::string log_id, std::string user_id) {
+#include "Log.h"
+
+#include "../Database/SQLHandler.h"
+#include "../Database/SQLiteHandler.h"
+
+Log::Log(std::string log_id, std::string user_id)
+{
     this->log_id  = log_id;
     this->user_id = user_id;
 
-    this->db  = new SQLiteHandler();
-    this->sql = new SQLHandler();
+    SQLiteHandler *db  = new SQLiteHandler();
+    SQLHandler *sql = new SQLHandler();
 
     sql->Table("logs")->Set("log_id", this->log_id)
-                      ->Set("user_id", this->user_id)
-                      ->Set("ocorrencia", this->DateTimeNow());
+    ->Set("user_id", this->user_id)
+    ->Set("ocorrencia", this->DateTimeNow());
 
-    this->db->Exec(sql->Insert());
+    db->Exec(sql->Insert());
 }
 
-std::string Log::DateTimeNow() {
+std::string Log::DateTimeNow()
+{
     wxDateTime now = wxDateTime::Now();
     std::stringstream ss;
     ss << now.GetTicks();

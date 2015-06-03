@@ -44,12 +44,10 @@
 		</Linker>
 		<Unit filename="App/MyApp.cpp" />
 		<Unit filename="App/MyApp.h" />
-		<Unit filename="App/MyFrame.cpp" />
-		<Unit filename="App/MyFrame.h" />
-		<Unit filename="Database/Database.cpp" />
-		<Unit filename="Database/Database.h" />
-		<Unit filename="Database/SqlHandler.cpp" />
-		<Unit filename="Database/SqlHandler.h" />
+		<Unit filename="Database/SQLHandler.cpp" />
+		<Unit filename="Database/SQLHandler.h" />
+		<Unit filename="Database/SQLiteHandler.cpp" />
+		<Unit filename="Database/SQLiteHandler.h" />
 		<Unit filename="Database/sqlite3.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -60,16 +58,32 @@
 		<Unit filename="Images/resources.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
+		<Unit filename="LibraryInc.h" />
+		<Unit filename="Log/Log.cpp" />
+		<Unit filename="Log/Log.h" />
 		<Unit filename="Menu/MyMenu.cpp" />
 		<Unit filename="Menu/MyMenu.h" />
 		<Unit filename="SplashScreen/SplashScreen.cpp" />
 		<Unit filename="SplashScreen/SplashScreen.h" />
 		<Unit filename="TaskBar/TaskBar.cpp" />
 		<Unit filename="TaskBar/TaskBar.h" />
+		<Unit filename="UserControl/LibraryScreen.cpp" />
+		<Unit filename="UserControl/LibraryScreen.h" />
+		<Unit filename="UserControl/LoginScreen.cpp" />
+		<Unit filename="UserControl/LoginScreen.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
+			<DoxyBlocks>
+				<comment_style block="3" line="1" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
