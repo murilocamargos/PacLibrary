@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1433443281 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\images\resources.rc
+1433445046 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\images\resources.rc
 	"wx/msw/wx.rc"
 
 1412649244 c:\wxwidgets-3.0.2\include\wx\msw\wx.rc
@@ -3078,7 +3078,7 @@
 1412649242 c:\wxwidgets-3.0.2\include\wx\cocoa\taskbar.h
 	"wx/icon.h"
 
-1433266851 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\taskbar\taskbar.h
+1433452178 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\taskbar\taskbar.h
 	<wx/wx.h>
 	<wx/taskbar.h>
 
@@ -3476,7 +3476,7 @@
 
 1433429171 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\log\log.h
 
-1433443389 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\usercontrol\libraryscreen.cpp
+1433445046 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\usercontrol\libraryscreen.cpp
 	"../LibraryInc.h"
 	"LibraryScreen.h"
 	"InsertUserScreen.h"
