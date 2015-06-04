@@ -1,17 +1,17 @@
-﻿Divisão
-=======
+﻿Divisão do Trabalho
+===================
 
-| Funcionalidade      | Autor(a) | Descrição            | Status | Extras           |
-|---------------------|----------|----------------------|--------|------------------|
-| Splashscreen        | Murilo   | *.bmp                | ok     | tempo            |
-| Menu                | Murilo   | FileDialog           | ok     | wxFontDialog     |
-| Ícone na janela     |	Murilo   |                      | ok     |                  |
-| Internacionalização | Mur./Lu. | en/pt/fr             | ok     | es               |
-| Logs                | Murilo   | Armazena no BD       | ok     |                  |
-| Tela de login       | Murilo   |                      | ok     | escolher idioma  |
-| Ícone na taskbar    | Luana    | wxTaskBarIcon        | ok     | minimizar tela   |
-| Banco de Dados      | Luana    | Fazer conexão        | ok     |                  |
-| Controle de Acesso  | Luana    | cadastro/acesso      |        | níveis de acesso |
-| Ajuda               | Luana    | wxHtmlHelpController |        |                  |
-| Doc. de módulo      | Luana    |                      |        |                  |
-| Documentação geral  | Mur./Lu. |                      |        |                  |
+| Funcionalidade      | Autor(a) | Descrição            | Status | Extras           | Status |
+|---------------------|----------|----------------------|--------|------------------|--------|
+| Splashscreen        | Murilo   | *.bmp                | ok     | tempo            | ok     |
+| Menu                | Murilo   | FileDialog           | ok     | wxFontDialog     |        |
+| Ícone na janela     |	Murilo   |                      | ok     | ícones variados  | ok     |
+| Internacionalização | Mur./Lu. | en                   | ok     | es/pt/fr         |        |
+| Logs                | Murilo   | Armazena no BD       | ok     |                  |        |
+| Tela de login       | Murilo   |                      | ok     | escolher idioma  | ok     |
+| Ícone na taskbar    | Luana    | wxTaskBarIcon        | ok     | minimizar tela   | ok     |
+| Banco de Dados      | Luana    | Fazer conexão        | ok     |                  |        |
+| Controle de Acesso  | Luana    | cadastro/acesso      | ok     | níveis de acesso | ok     |
+| Ajuda               | Luana    | wxHtmlHelpController |        |                  |        |
+| Doc. de módulo      | Luana    |                      |        |                  |        |
+| Documentação geral  | Mur./Lu. |                      |        |                  |        |

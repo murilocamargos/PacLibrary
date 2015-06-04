@@ -17,5 +17,5 @@
 #include <wx/splash.h>
 #include <wx/taskbar.h>
 
-#endif
+#endif //_LIBRARYINC_H
 
