@@ -30,6 +30,7 @@ SQLiteHandler::~SQLiteHandler() {
 // tirado de http://www.codeproject.com/Tips/378808/Accessing-a-SQLite-Database-with-Cplusplus
 int SQLiteHandler::NumRows(SQLHandler *sql) {
     sqlite3_stmt *statement;
+    int num = 0;
 
     if (sqlite3_prepare(this->db, sql->Count().c_str(), -1, &statement, 0) == SQLITE_OK) {
         // Pega a próxima linha da consulta e verifica se é uma linha válida.
@@ -37,11 +38,13 @@ int SQLiteHandler::NumRows(SQLHandler *sql) {
         if (sqlite3_step(statement) == SQLITE_ROW) {
             // Pega o valor da primeira coluna da primeira linha da consulta e converte
             // em inteiro.
-            return atoi((char*) sqlite3_column_text(statement, 0));
+            num = atoi((char*) sqlite3_column_text(statement, 0));
         }
     }
 
-    return 0;
+    sqlite3_finalize(statement);
+
+    return num;
 }
 
 int SQLiteHandler::Exec(std::string sql) {

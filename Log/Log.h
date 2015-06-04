@@ -19,7 +19,7 @@ public:
 
     //! \brief Retorna o instante atual em formato UNIX.
     //! \return Uma string contendo o inteiro que representa o instante atual em formato UNIX.
-    std::string DateTimeNow();
+    static std::string DateTimeNow();
 
     //! \example Log.cpp
 };

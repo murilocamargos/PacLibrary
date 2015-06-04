@@ -604,10 +604,10 @@
                                         <property name="pin_button">1</property>
                                         <property name="pos"></property>
                                         <property name="resize">Resizable</property>
-                                        <property name="selection">-1</property>
+                                        <property name="selection">0</property>
                                         <property name="show">1</property>
                                         <property name="size">175,-1</property>
-                                        <property name="style"></property>
+                                        <property name="style">wxCB_READONLY</property>
                                         <property name="subclass"></property>
                                         <property name="toolbar_pane">0</property>
                                         <property name="tooltip"></property>

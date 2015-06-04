@@ -1,11 +1,12 @@
+#include "../LibraryInc.h"
+
 #include "LoginScreen.h"
+
 #include "../Database/SQLiteHandler.h"
 #include "../Database/SQLHandler.h"
 #include "../Encryption/SHA256.h"
 #include "../App/MyApp.h"
 #include "../Log/Log.h"
-
-#include <string>
 
 BEGIN_EVENT_TABLE(LoginScreen, wxDialog)
     EVT_BUTTON(CANCEL, LoginScreen::Cancel)
@@ -66,11 +67,18 @@ LoginScreen::LoginScreen(const wxString& title, wxApp *app, wxWindow* parent, wx
     labelLanguage->Wrap( -1 );
     languageSizer->Add( labelLanguage, 0, wxALL, 5 );
 
-    inputLanguage = new wxComboBox( this, wxID_ANY, this->langs[this->lang], wxDefaultPosition, wxSize( 150,-1 ), 0, NULL, 0 );
+    inputLanguage = new wxComboBox( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 150,-1 ), 0, NULL, wxCB_READONLY );
+    int n = 0, i = 0;
     for (std::map<long, wxString>::iterator it = this->langs.begin(); it != this->langs.end(); ++it)
     {
         inputLanguage->Append(it->second);
+        if (it->first == this->lang)
+        {
+            n = i;
+        }
+        i++;
     }
+    inputLanguage->SetSelection(n);
 
     languageSizer->Add( inputLanguage, 0, wxALL, 5 );
 

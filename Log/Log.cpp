@@ -15,7 +15,7 @@ Log::Log(std::string log_id, std::string user_id)
 
     sql->Table("logs")->Set("log_id", this->log_id)
     ->Set("user_id", this->user_id)
-    ->Set("ocorrencia", this->DateTimeNow());
+    ->Set("ocorrencia", Log::DateTimeNow());
 
     db->Exec(sql->Insert());
 }

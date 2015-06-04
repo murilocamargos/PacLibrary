@@ -3028,7 +3028,7 @@
 	"../Menu/MyMenu.h"
 	<wx/taskbar.h>
 
-1433359523 c:\users\murilocamargos\documents\university\pac\pac-tpii\menu\mymenu.h
+1433387156 c:\users\murilocamargos\documents\university\pac\pac-tpii\menu\mymenu.h
 
 1412518750 c:\wxwidgets-3.0.2\include\wx\splash.h
 	"wx/generic/splash.h"
@@ -3322,7 +3322,7 @@
 	<unicode/ubrk.h>
 	<unicode/utf16.h>
 
-1433263634 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.cpp
+1433391045 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\database\sqlitehandler.cpp
 	"SQLiteHandler.h"
 	<stdlib.h>
 	<iostream>
@@ -3333,11 +3333,22 @@
 1432408680 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\login.cpp
 	"Login.h"
 
-1433386444 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.h
-	<wx/wx.h>
-	<map>
+1433387808 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.h
 
-1433386696 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.cpp
+1433388111 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\loginscreen.cpp
+	"../LibraryInc.h"
+	"LoginScreen.h"
+	"../Database/SQLiteHandler.h"
+	"../Database/SQLHandler.h"
+	"../Encryption/SHA256.h"
+	"../App/MyApp.h"
+	"../Log/Log.h"
+
+1433386720 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.h
+	"../Menu/MyMenu.h"
+	"../TaskBar/TaskBar.h"
+
+1433389341 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.cpp
 	"../LibraryInc.h"
 	"LibraryScreen.h"
 	"InsertUserScreen.h"
@@ -3345,26 +3356,15 @@
 	"../Database/SQLiteHandler.h"
 	"../Database/SQLHandler.h"
 
-1433386720 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.h
-	"../Menu/MyMenu.h"
-	"../TaskBar/TaskBar.h"
+1433388745 c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.h
 
-1433386444 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\libraryscreen.cpp
-	"../LibraryInc.h"
-	"LibraryScreen.h"
-	"../App/MyApp.h"
-	"../Database/SQLiteHandler.h"
-	"../Database/SQLHandler.h"
-
-1433357821 c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.h
-
-1433357815 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.cpp
+1433390136 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\log\log.cpp
 	"../LibraryInc.h"
 	"Log.h"
 	"../Database/SQLHandler.h"
 	"../Database/SQLiteHandler.h"
 
-1433386444 c:\users\murilocamargos\documents\university\pac\pac-tpii\libraryinc.h
+1433387853 c:\users\murilocamargos\documents\university\pac\pac-tpii\libraryinc.h
 	<string>
 	<vector>
 	<map>
@@ -3376,7 +3376,7 @@
 	<wx/splash.h>
 	<wx/taskbar.h>
 
-1433386705 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\insertuserscreen.cpp
+1433391280 source:c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\insertuserscreen.cpp
 	"../LibraryInc.h"
 	"InsertUserScreen.h"
 	"../Database/SQLiteHandler.h"
@@ -3384,5 +3384,5 @@
 	"../Encryption/SHA256.h"
 	"../Log/Log.h"
 
-1433386711 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\insertuserscreen.h
+1433389809 c:\users\murilocamargos\documents\university\pac\pac-tpii\usercontrol\insertuserscreen.h
 

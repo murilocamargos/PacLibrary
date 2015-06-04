@@ -90,7 +90,7 @@ void LibraryScreen::OnMenuFileOpen(wxCommandEvent& event)
 
 void LibraryScreen::OnMenuUserNew(wxCommandEvent& event)
 {
-    InsertUserScreen *ins = new InsertUserScreen(_("Insert User"), this);
+    InsertUserScreen *ins = new InsertUserScreen(this->user_info["user_id"], _("Insert User"), this);
     ins->SetIcon(wxICON(ADDUS_IC));
     ins->Show(TRUE);
 }

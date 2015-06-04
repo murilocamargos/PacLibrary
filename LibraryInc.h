@@ -1,9 +1,8 @@
-#ifndef _LibraryInc_H
-#define _LibraryInc_H
+#ifndef _LIBRARYINC_H
+#define _LIBRARYINC_H
 
-//! \brief Inclui as bibliotecas padrão.
-//! \details Este arquivo contém as bibliotecas padrão que
-//! são utilizadas em quase todas as classe da aplicação.
+// Este arquivo contém as bibliotecas padrão que
+// são utilizadas em quase todas as classe da aplicação.
 
 #include <string>
 #include <vector>
