@@ -3,6 +3,7 @@
 
 #include "../Menu/MyMenu.h"
 #include "../TaskBar/TaskBar.h"
+#include "../Ajuda/Ajuda.h"
 
 //! \class LibraryScreen
 //! \brief Frame principal da aplicação.
@@ -12,9 +13,10 @@ class LibraryScreen : public wxFrame
 private:
     MyMenu *menu;
     TaskBar *taskbar;
+    wxToolBar *toolbar;
     wxApp *app;
     std::map<std::string, std::string> user_info;
-
+    Ajuda *ajuda;
 public:
 
     //! \brief Construtor.
@@ -31,16 +33,6 @@ public:
                   std::string uid,
                   const wxPoint& position = wxPoint(100, 100),
                   const wxSize& size = wxSize(800, 600));
-
-    //! \brief Novo arquivo.
-    //! \param event Evento que ocorre ao clicar num item da barra de menus.
-    //! \details Mostra uma mensagem informando que um novo arquivo foi criado.
-    void OnMenuFileNew(wxCommandEvent &event);
-
-    //! \brief Salvar arquivo.
-    //! \param event Evento que ocorre ao clicar num item da barra de menus.
-    //! \details Mostra uma mensagem informando que um novo arquivo foi salvo.
-    void OnMenuFileSave(wxCommandEvent &event);
 
     //! \brief Abrir arquivo.
     //! \param event Evento que ocorre ao clicar num item da barra de menus.
@@ -60,6 +52,16 @@ public:
     //! \details Abre a janela de inserção de usuários no sistema. Atualmente
     //! apenas administradores têm acesso a esta funcionalidade.
     void OnMenuUserNew(wxCommandEvent &event);
+
+    //! \brief Novo arquivo.
+    //! \param event Evento que ocorre ao clicar num item da barra de menus.
+    //! \details Mostra uma mensagem informando que um novo arquivo foi criado.
+    void OnMenuFileNew(wxCommandEvent &event);
+
+    //! \brief Salvar arquivo.
+    //! \param event Evento que ocorre ao clicar num item da barra de menus.
+    //! \details Mostra uma mensagem informando que um novo arquivo foi salvo.
+    void OnMenuFileSave(wxCommandEvent &event);
 
     //! \brief Fechar aplicação.
     //! \param event Evento que ocorre ao fechar a aplicação.
@@ -82,6 +84,8 @@ public:
     //! neste ícone, o usuário irá restaurar o frame.
     bool CloseFrame();
 
+    void OnMenuHelp(wxCommandEvent &);
+
     /// Enumera as funções dos itens dos menus para a tabela de eventos.
     enum
     {
@@ -89,9 +93,9 @@ public:
         MENU_FILE_SAVE,
         MENU_FILE_OPEN,
         MENU_FILE_QUIT,
-        MENU_USER_NEW
+        MENU_USER_NEW,
+        MENU_HELP
     };
-
     DECLARE_EVENT_TABLE();
 };
 

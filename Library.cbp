@@ -42,12 +42,21 @@
 		<Linker>
 			<Add option="-mthreads" />
 		</Linker>
+		<Unit filename="Ajuda/Ajuda.cpp" />
+		<Unit filename="Ajuda/Ajuda.h" />
 		<Unit filename="App/MyApp.cpp" />
 		<Unit filename="App/MyApp.h" />
+<<<<<<< Updated upstream
 		<Unit filename="Database/SQLHandler.cpp" />
 		<Unit filename="Database/SQLHandler.h" />
 		<Unit filename="Database/SQLiteHandler.cpp" />
 		<Unit filename="Database/SQLiteHandler.h" />
+=======
+		<Unit filename="Database/SQLiteHandler.cpp" />
+		<Unit filename="Database/SQLiteHandler.h" />
+		<Unit filename="Database/SqlHandler.cpp" />
+		<Unit filename="Database/SqlHandler.h" />
+>>>>>>> Stashed changes
 		<Unit filename="Database/sqlite3.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -58,7 +67,10 @@
 		<Unit filename="Images/resources.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>
+<<<<<<< Updated upstream
 		<Unit filename="LibraryInc.h" />
+=======
+>>>>>>> Stashed changes
 		<Unit filename="Log/Log.cpp" />
 		<Unit filename="Log/Log.h" />
 		<Unit filename="Menu/MyMenu.cpp" />
@@ -67,8 +79,11 @@
 		<Unit filename="SplashScreen/SplashScreen.h" />
 		<Unit filename="TaskBar/TaskBar.cpp" />
 		<Unit filename="TaskBar/TaskBar.h" />
+<<<<<<< Updated upstream
 		<Unit filename="UserControl/InsertUserScreen.cpp" />
 		<Unit filename="UserControl/InsertUserScreen.h" />
+=======
+>>>>>>> Stashed changes
 		<Unit filename="UserControl/LibraryScreen.cpp" />
 		<Unit filename="UserControl/LibraryScreen.h" />
 		<Unit filename="UserControl/LoginScreen.cpp" />

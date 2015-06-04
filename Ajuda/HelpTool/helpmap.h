@@ -1,0 +1,2 @@
+#define IDH_MENU   		10001
+#define IDH_TASKBAR		10002

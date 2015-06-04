@@ -35,7 +35,6 @@ void MyMenu::Separator(wxString menuLabel)
         menus[menuLabel]->AppendSeparator();
 }
 
-
 wxString MyMenu::FilePath(wxString title, wxString extensions, wxString defDir)
 {
 

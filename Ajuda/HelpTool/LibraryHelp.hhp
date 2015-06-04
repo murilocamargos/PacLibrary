@@ -1,0 +1,27 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=LibraryHelp.chm
+Contents file=Conteudo.hhc
+Default Window=meuhelp
+Default topic=Menu.htm
+Display compile progress=No
+Index file=Index.hhk
+Language=0x416 Português (Brasil)
+
+[WINDOWS]
+meuhelp="Library Help","Conteudo.hhc","Index.hhk","Menu.htm",,,,,,0x2120,,0x3006,,0x800000,,,,,,0
+
+
+[FILES]
+Menu.htm
+Taskbar.htm
+
+[ALIAS]
+IDH_MENU=Menu.htm
+IDH_TASKBAR=Taskbar.htm
+
+[MAP]
+#include helpmap.h
+
+[INFOTYPES]
+
