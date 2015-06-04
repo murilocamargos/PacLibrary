@@ -3082,7 +3082,7 @@
 	<wx/wx.h>
 	<wx/taskbar.h>
 
-1433266851 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\taskbar\taskbar.cpp
+1433452178 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\taskbar\taskbar.cpp
 	"TaskBar.h"
 
 1433261662 c:\users\murilocamargos\documents\university\pac\pac-tpii\taskbar\taskbar.h
@@ -3380,10 +3380,10 @@
 
 1433429171 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\usercontrol\loginscreen.h
 
-1433440310 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\usercontrol\libraryscreen.h
+1433452840 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\usercontrol\libraryscreen.h
 	"../Menu/MyMenu.h"
 	"../TaskBar/TaskBar.h"
-	"../Ajuda/Ajuda.h"
+	"../Help/Help.h"
 
 1433429171 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\database\sqlhandler.cpp
 	"../LibraryInc.h"
@@ -3476,7 +3476,7 @@
 
 1433429171 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\log\log.h
 
-1433445046 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\usercontrol\libraryscreen.cpp
+1433452869 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\usercontrol\libraryscreen.cpp
 	"../LibraryInc.h"
 	"LibraryScreen.h"
 	"InsertUserScreen.h"
@@ -3766,4 +3766,13 @@
 	"../Database/SQLHandler.h"
 	"../Encryption/SHA256.h"
 	"../Log/Log.h"
+
+1433452757 c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\help\help.h
+	<wx/wx.h>
+	<wx/html/helpctrl.h>
+	<iostream>
+
+1433452694 source:c:\users\luana\documents\estudos\faculdade\pac\pac-tpii\help\help.cpp
+	"Help.h"
+	<wx/filesys.h>
 

@@ -3,7 +3,7 @@
 
 #include "../Menu/MyMenu.h"
 #include "../TaskBar/TaskBar.h"
-#include "../Ajuda/Ajuda.h"
+#include "../Help/Help.h"
 
 //! \class LibraryScreen
 //! \brief Frame principal da aplicação.
@@ -16,7 +16,7 @@ private:
     wxToolBar *toolbar;
     wxApp *app;
     std::map<std::string, std::string> user_info;
-    Ajuda *ajuda;
+    Help *help;
 public:
 
     //! \brief Construtor.

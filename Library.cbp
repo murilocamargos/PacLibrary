@@ -42,8 +42,6 @@
 		<Linker>
 			<Add option="-mthreads" />
 		</Linker>
-		<Unit filename="Ajuda/Ajuda.cpp" />
-		<Unit filename="Ajuda/Ajuda.h" />
 		<Unit filename="App/MyApp.cpp" />
 		<Unit filename="App/MyApp.h" />
 		<Unit filename="Database/SQLHandler.h" />
@@ -58,6 +56,8 @@
 		<Unit filename="Encryption/SHA256.cpp" />
 		<Unit filename="Encryption/SHA256.h" />
 		<Unit filename="Encryption/SHA256_Licence.txt" />
+		<Unit filename="Help/Help.cpp" />
+		<Unit filename="Help/Help.h" />
 		<Unit filename="Images/resources.rc">
 			<Option compilerVar="WINDRES" />
 		</Unit>

@@ -32,7 +32,7 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
 
     this->user_info = db->rows[0];
 
-    this->ajuda = new Ajuda();
+    this->help = new Help();
 
     // Taskbar
     this->taskbar = new TaskBar(this);
@@ -170,6 +170,5 @@ void LibraryScreen::OnExit(wxCloseEvent& event)
 
 void LibraryScreen::OnMenuHelp(wxCommandEvent& event)
 {
-    ajuda->ShowHelp();
-   // wxMessageBox("Teste");
+    help->ShowHelp();
 }

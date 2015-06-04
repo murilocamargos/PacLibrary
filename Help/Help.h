@@ -1,16 +1,16 @@
-#ifndef _AJUDA_H
-#define _AJUDA_H
+#ifndef _HELP_H
+#define _HELP_H
 
 #include <wx/wx.h>
 #include <wx/html/helpctrl.h>
 #include <iostream>
 
-class Ajuda : public wxHtmlHelpController
+class Help : public wxHtmlHelpController
 {
 private:
 
 public:
-    Ajuda();
+    Help();
     void ShowHelp();
     void OnExit();
 };
