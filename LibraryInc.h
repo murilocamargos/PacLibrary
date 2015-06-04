@@ -1,8 +1,8 @@
 #ifndef _LIBRARYINC_H
 #define _LIBRARYINC_H
 
-// Este arquivo contÈm as bibliotecas padr„o que
-// s„o utilizadas em quase todas as classe da aplicaÁ„o.
+// Este arquivo cont√©m as bibliotecas padr√£o que s√£o
+// utilizadas em quase todas as classe da aplica√ß√£o.
 
 #include <string>
 #include <vector>
