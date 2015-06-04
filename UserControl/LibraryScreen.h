@@ -27,7 +27,7 @@ public:
     //! \param size Tamaho do frame.
     //! \details O construtor é reponsável por salvar na memória todas as
     //! informações do usuário que o acessou, inicializar a TaskBar, a barra
-    //! de menus (MyMenu) e a barra de status.
+    //! de menus (MyMenu), a barra de ferramentas e a barra de status.
     LibraryScreen(const wxString& title,
                   wxApp *app,
                   std::string uid,
@@ -63,6 +63,12 @@ public:
     //! \details Mostra uma mensagem informando que um novo arquivo foi salvo.
     void OnMenuFileSave(wxCommandEvent &event);
 
+    //! \brief Mostrar ajuda.
+    //! \param event Evento que ocorre ao clicar num item da barra de menus.
+    //! \details Abre o assistente de ajuda com toda a especificação funcional
+    //! da aplicação.
+    void OnMenuHelp(wxCommandEvent &);
+
     //! \brief Fechar aplicação.
     //! \param event Evento que ocorre ao fechar a aplicação.
     //! \details Neste caso, o fechamento se dá pelo clique no botão <b>x</b>
@@ -84,8 +90,6 @@ public:
     //! neste ícone, o usuário irá restaurar o frame.
     bool CloseFrame();
 
-    void OnMenuHelp(wxCommandEvent &);
-
     /// Enumera as funções dos itens dos menus para a tabela de eventos.
     enum
     {
@@ -96,6 +100,7 @@ public:
         MENU_USER_NEW,
         MENU_HELP
     };
+
     DECLARE_EVENT_TABLE();
 };
 

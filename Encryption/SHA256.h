@@ -2,8 +2,13 @@
 #define SHA256_H
 #include <string>
 
-// Copiado de http://www.zedwood.com/article/cpp-sha256-function
-
+//! \class SHA256
+//! \brief Implementação da função hash SHA-256.
+//! \details SHA-256 é a função hash mais popular dentro da família
+//! SHA-2 até o presente momento. Ela fornece 128 bits de segurança
+//! para assinaturas digitais (SHA-1 fornece apenas 80 bits).
+//!
+//! A implementação pode ser encontrada em: http://www.zedwood.com/article/cpp-sha256-function
 class SHA256
 {
 protected:

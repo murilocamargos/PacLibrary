@@ -3,7 +3,8 @@
 
 //! \class LoginScreen
 //! \brief Tela de login da aplicação.
-//! \details Tela inicial da aplicação, onde o usuário informa seu login, senha e o idioma desejado.
+//! \details Tela inicial da aplicação, onde o usuário informa
+//! seu login, senha e o idioma desejado.
 class LoginScreen : public wxDialog
 {
 private:
@@ -23,14 +24,13 @@ protected:
 
 public:
     //! \brief Construtor.
-    //! \param title Título do frame.
-    //! \param title	Título da janela.
+    //! \param title Título da janela.
     //! \param *app	Ponteiro para a aplicação que executa a janela.
-    //! \param *parent	Ponteiro para o wxWindow pai desta janela.
-    //! \param id	ID da janela.
-    //! \param pos	Posição inicial da janela.
-    //! \param size	Tamanho da janela.
-    //! \param style	Estilo da janela.
+    //! \param *parent Ponteiro para o wxWindow pai desta janela.
+    //! \param id ID da janela.
+    //! \param pos Posição inicial da janela.
+    //! \param size Tamanho da janela.
+    //! \param style Estilo da janela.
     //! \details É no construtor que todos os campos e suas posições são inicializados.
     LoginScreen(const wxString& title,
                 wxApp *app,

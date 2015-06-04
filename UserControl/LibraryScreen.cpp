@@ -37,12 +37,8 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
     // Taskbar
     this->taskbar = new TaskBar(this);
 
-    ///Toolbar
-  //  wxBitmap New (wxBITMAP(NEWBMP));
-    //wxBitmap Save (wxBITMAP(SAVEBMP));
-   // wxBitmap Help (wxBITMAP(HELPBMP));
-
-    toolbar = CreateToolBar();
+    //Toolbar
+    this->toolbar = CreateToolBar();
 
     this->toolbar->AddTool(MENU_FILE_OPEN, "", wxBITMAP(FILEBMP), _("Open File."), wxITEM_NORMAL);
     toolbar->Realize();
@@ -70,10 +66,9 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
     this->menu->AddSubMenu(file, MENU_FILE_SAVE, _("Save\tCtrl+S"), _("Save File."));
     this->menu->Separator(file);
     this->menu->AddSubMenu(file, MENU_FILE_QUIT, _("Quit\tCtrl+Q"), _("Quit App."));
-    this->menu->AddSubMenu(help, MENU_HELP, _("Help\tF1"),
-                           _("Get Help."));
-    this->menu->AddSubMenu(help, -1, _("About\tF2"),
-                           _("Get to know us better!"));
+    this->menu->AddSubMenu(help, MENU_HELP, _("Help\tF1"), _("Get Help."));
+    this->menu->AddSubMenu(help, -1, _("About\tF2"), _("Get to know us better!"));
+
     // O menu de usuários estará disponível apenas ao administrador, por enquanto
     if (this->user_info["nivel"] == "1") {
         this->menu->AddMenu(user);
