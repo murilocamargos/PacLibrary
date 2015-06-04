@@ -20,7 +20,7 @@ bool MyApp::OnInit()
     // Tela de login
     LoginScreen *login = new LoginScreen(_("Login"), this);
 
-    login->SetIcon(wxICON(APP_ICON));
+    login->SetIcon(wxICON(LOGIN_IC));
     login->Show(TRUE);
 
     SetTopWindow(login);

@@ -67,6 +67,8 @@
 		<Unit filename="SplashScreen/SplashScreen.h" />
 		<Unit filename="TaskBar/TaskBar.cpp" />
 		<Unit filename="TaskBar/TaskBar.h" />
+		<Unit filename="UserControl/InsertUserScreen.cpp" />
+		<Unit filename="UserControl/InsertUserScreen.h" />
 		<Unit filename="UserControl/LibraryScreen.cpp" />
 		<Unit filename="UserControl/LibraryScreen.h" />
 		<Unit filename="UserControl/LoginScreen.cpp" />

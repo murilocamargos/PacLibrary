@@ -1,5 +1,7 @@
 #include "wx/msw/wx.rc"
 
 APP_ICON    ICON    "icon.ico"
+LOGIN_IC    ICON    "login.ico"
+ADDUS_IC    ICON    "add_user.ico"
 SPLASH      RCDATA  "splash.png"
 SPLBMP      BITMAP  "splash.bmp"

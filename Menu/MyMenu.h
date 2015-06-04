@@ -36,7 +36,7 @@ public:
     //! \param label Título do submenu adicionado.
     //! \param help Mensagem de ajuda do submenu.
     //! \return void
-    //! \detail Neste caso, o submenu adicionado será um menu préviamente
+    //! \details Neste caso, o submenu adicionado será um menu préviamente
     //! inserido no dicionário mas não acoplado à barra de menus. O efeito
     //! disso é a criação de um submenu que possui seus submenus.
     void AddSubMenu(wxString menuLabel, wxString label, wxString help);

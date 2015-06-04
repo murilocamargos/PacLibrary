@@ -13,107 +13,111 @@ BEGIN_EVENT_TABLE(LoginScreen, wxDialog)
     EVT_CLOSE(LoginScreen::OnExit)
 END_EVENT_TABLE()
 
-LoginScreen::LoginScreen(const wxString& title, wxApp *app, wxWindow* parent, wxWindowID id,
-    const wxPoint& pos, const wxSize& size, long style):
-        wxDialog(parent, id, title, pos, size, style) {
+LoginScreen::LoginScreen(const wxString& title, wxApp *app, wxWindow* parent, wxWindowID id, const wxPoint& pos, const wxSize& size, long style):
+    wxDialog(parent, id, title, pos, size, style)
+{
 
     this->lang = ((MyApp*) app)->locale->GetLanguage();
     this->app = app;
 
     this->langs[wxLANGUAGE_ENGLISH]    = _("English");
     this->langs[wxLANGUAGE_FRENCH]     = _("French");
-	this->langs[wxLANGUAGE_PORTUGUESE] = _("Portuguese");
-	this->langs[wxLANGUAGE_SPANISH]    = _("Spanish");
+    this->langs[wxLANGUAGE_PORTUGUESE] = _("Portuguese");
+    this->langs[wxLANGUAGE_SPANISH]    = _("Spanish");
 
     this->SetSizeHints( wxDefaultSize, wxDefaultSize );
 
-	wxBoxSizer* generalSizer;
-	generalSizer = new wxBoxSizer( wxVERTICAL );
+    wxBoxSizer* generalSizer;
+    generalSizer = new wxBoxSizer( wxVERTICAL );
 
-	wxGridSizer* textFieldSizer;
-	textFieldSizer = new wxGridSizer( 1, 3, 0, 0 );
+    wxGridSizer* textFieldSizer;
+    textFieldSizer = new wxGridSizer( 1, 3, 0, 0 );
 
-	wxBoxSizer* usernameSizer;
-	usernameSizer = new wxBoxSizer( wxVERTICAL );
+    wxBoxSizer* usernameSizer;
+    usernameSizer = new wxBoxSizer( wxVERTICAL );
 
-	labelUsername = new wxStaticText( this, wxID_ANY, _("Username:"), wxPoint( -1,-1 ), wxSize( -1,-1 ), 0 );
-	labelUsername->Wrap( -1 );
-	usernameSizer->Add( labelUsername, 0, wxALL, 5 );
+    labelUsername = new wxStaticText( this, wxID_ANY, _("Username:"), wxPoint( -1,-1 ), wxSize( -1,-1 ), 0 );
+    labelUsername->Wrap( -1 );
+    usernameSizer->Add( labelUsername, 0, wxALL, 5 );
 
-	inputUsername = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 150,-1 ), 0 );
-	usernameSizer->Add( inputUsername, 0, wxALL, 5 );
-
-
-	textFieldSizer->Add( usernameSizer, 1, wxEXPAND, 5 );
-
-	wxBoxSizer* passwordSizer;
-	passwordSizer = new wxBoxSizer( wxVERTICAL );
-
-	labelPassword = new wxStaticText( this, wxID_ANY, _("Password:"), wxDefaultPosition, wxDefaultSize, 0 );
-	labelPassword->Wrap( -1 );
-	passwordSizer->Add( labelPassword, 0, wxALL, 5 );
-
-	inputPassword = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 150,-1 ), wxTE_PASSWORD );
-	passwordSizer->Add( inputPassword, 0, wxALL, 5 );
+    inputUsername = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 150,-1 ), 0 );
+    usernameSizer->Add( inputUsername, 0, wxALL, 5 );
 
 
-	textFieldSizer->Add( passwordSizer, 1, wxEXPAND, 5 );
+    textFieldSizer->Add( usernameSizer, 1, wxEXPAND, 5 );
 
-	wxBoxSizer* languageSizer;
-	languageSizer = new wxBoxSizer( wxVERTICAL );
+    wxBoxSizer* passwordSizer;
+    passwordSizer = new wxBoxSizer( wxVERTICAL );
 
-	labelLanguage = new wxStaticText( this, wxID_ANY, _("Language:"), wxDefaultPosition, wxDefaultSize, 0 );
-	labelLanguage->Wrap( -1 );
-	languageSizer->Add( labelLanguage, 0, wxALL, 5 );
+    labelPassword = new wxStaticText( this, wxID_ANY, _("Password:"), wxDefaultPosition, wxDefaultSize, 0 );
+    labelPassword->Wrap( -1 );
+    passwordSizer->Add( labelPassword, 0, wxALL, 5 );
 
-	inputLanguage = new wxComboBox( this, wxID_ANY, this->langs[this->lang], wxDefaultPosition, wxSize( 150,-1 ), 0, NULL, 0 );
-	for (std::map<long, wxString>::iterator it = this->langs.begin(); it != this->langs.end(); ++it) {
+    inputPassword = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( 150,-1 ), wxTE_PASSWORD );
+    passwordSizer->Add( inputPassword, 0, wxALL, 5 );
+
+
+    textFieldSizer->Add( passwordSizer, 1, wxEXPAND, 5 );
+
+    wxBoxSizer* languageSizer;
+    languageSizer = new wxBoxSizer( wxVERTICAL );
+
+    labelLanguage = new wxStaticText( this, wxID_ANY, _("Language:"), wxDefaultPosition, wxDefaultSize, 0 );
+    labelLanguage->Wrap( -1 );
+    languageSizer->Add( labelLanguage, 0, wxALL, 5 );
+
+    inputLanguage = new wxComboBox( this, wxID_ANY, this->langs[this->lang], wxDefaultPosition, wxSize( 150,-1 ), 0, NULL, 0 );
+    for (std::map<long, wxString>::iterator it = this->langs.begin(); it != this->langs.end(); ++it)
+    {
         inputLanguage->Append(it->second);
-	}
+    }
 
-	languageSizer->Add( inputLanguage, 0, wxALL, 5 );
-
-
-	textFieldSizer->Add( languageSizer, 1, wxEXPAND, 5 );
+    languageSizer->Add( inputLanguage, 0, wxALL, 5 );
 
 
-	generalSizer->Add( textFieldSizer, 1, wxALL|wxEXPAND, 5 );
-
-	wxBoxSizer* buttonSizer;
-	buttonSizer = new wxBoxSizer( wxHORIZONTAL );
-
-	buttonCancel = new wxButton( this, CANCEL, _("Cancel"), wxDefaultPosition, wxSize( 90,-1 ), 0 );
-	buttonSizer->Add( buttonCancel, 0, wxALL, 5 );
-
-	buttonLogin = new wxButton( this, LOGIN, _("Login"), wxDefaultPosition, wxSize( 90,-1 ), 0 );
-	buttonSizer->Add( buttonLogin, 0, wxALL, 5 );
+    textFieldSizer->Add( languageSizer, 1, wxEXPAND, 5 );
 
 
-	generalSizer->Add( buttonSizer, 1, wxALIGN_RIGHT|wxALL, 5 );
+    generalSizer->Add( textFieldSizer, 1, wxALL|wxEXPAND, 5 );
+
+    wxBoxSizer* buttonSizer;
+    buttonSizer = new wxBoxSizer( wxHORIZONTAL );
+
+    buttonCancel = new wxButton( this, CANCEL, _("Cancel"), wxDefaultPosition, wxSize( 90,-1 ), 0 );
+    buttonSizer->Add( buttonCancel, 0, wxALL, 5 );
+
+    buttonLogin = new wxButton( this, LOGIN, _("Login"), wxDefaultPosition, wxSize( 90,-1 ), 0 );
+    buttonSizer->Add( buttonLogin, 0, wxALL, 5 );
 
 
-	this->SetSizer( generalSizer );
-	this->Layout();
+    generalSizer->Add( buttonSizer, 1, wxALIGN_RIGHT|wxALL, 5 );
 
-	this->Centre( wxBOTH );
+
+    this->SetSizer( generalSizer );
+    this->Layout();
+
+    this->Centre( wxBOTH );
 }
 
 LoginScreen::~LoginScreen()
 {
 }
 
-void LoginScreen::OnExit(wxCloseEvent& event) {
+void LoginScreen::OnExit(wxCloseEvent& event)
+{
     Destroy();
     event.Skip();
 }
 
-void LoginScreen::Cancel(wxCommandEvent& event) {
+void LoginScreen::Cancel(wxCommandEvent& event)
+{
     inputUsername->Clear();
     inputPassword->Clear();
     inputLanguage->SetValue(this->langs[this->lang]);
 }
 
-void LoginScreen::Login(wxCommandEvent& event) {
+void LoginScreen::Login(wxCommandEvent& event)
+{
     // Define a query sql a ser executada
     SQLHandler *sql = new SQLHandler();
     std::string username = std::string(inputUsername->GetLineText(0).mb_str());
@@ -121,27 +125,33 @@ void LoginScreen::Login(wxCommandEvent& event) {
 
     sql->Table("usuarios")->Where("login", username)->Where("senha", sha256(password))->Column("user_id");
 
-    // Obtém o idioma escolhido pelo usuário
+    // Obtï¿½m o idioma escolhido pelo usuï¿½rio
     long choosenLang = -1;
-    for (std::map<long, wxString>::iterator it = this->langs.begin(); it != this->langs.end(); ++it) {
-        if (it->second == inputLanguage->GetValue()) {
+    for (std::map<long, wxString>::iterator it = this->langs.begin(); it != this->langs.end(); ++it)
+    {
+        if (it->second == inputLanguage->GetValue())
+        {
             choosenLang = it->first;
         }
-	}
-	if (choosenLang == -1) {
+    }
+    if (choosenLang == -1)
+    {
         choosenLang = wxLANGUAGE_ENGLISH;
-	}
+    }
 
     // Executa a query
     SQLiteHandler *db = new SQLiteHandler();
     db->Select(sql);
 
-    if (db->rows.size() > 0) {
+    if (db->rows.size() > 0)
+    {
         Log("4", db->rows[0]["user_id"]);
 
         ((MyApp*)app)->OpenFrame(db->rows[0]["user_id"], choosenLang);
         Destroy();
-    } else {
+    }
+    else
+    {
         wxLogMessage(_("There is something wrong with your credentials!"));
     }
 }
