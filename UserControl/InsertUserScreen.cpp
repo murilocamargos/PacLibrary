@@ -98,7 +98,7 @@ InsertUserScreen::InsertUserScreen( std::string uid, const wxString& title, wxWi
     wxBoxSizer* bSizer6;
     bSizer6 = new wxBoxSizer( wxHORIZONTAL );
 
-    buttonCancel = new wxButton( this, CANCEL, _("Cancel"), wxDefaultPosition, wxDefaultSize, 0 );
+    buttonCancel = new wxButton( this, CANCEL, _("Erase"), wxDefaultPosition, wxDefaultSize, 0 );
     buttonCancel->SetFont( wxFont( wxNORMAL_FONT->GetPointSize(), 70, 90, 90, false, wxEmptyString ) );
 
     bSizer6->Add( buttonCancel, 0, wxALIGN_BOTTOM|wxALL, 10 );
@@ -190,4 +190,3 @@ void InsertUserScreen::Save(wxCommandEvent& event)
     }
 
 }
-

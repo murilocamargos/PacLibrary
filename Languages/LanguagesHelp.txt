@@ -1,6 +1,7 @@
 Languages
 =========
 
+
 O   arquivo   `original.pot`   foi  gerado  através  de  uma
 ferramenta   para   obtenção   de  textos  que  possuem  uma
 determinada   flag  em  um  lote  de  arquivos.  O  nome  da
@@ -15,7 +16,9 @@ aplicativo  como  dicionário, o programa `Poedit` foi usado.
 Nele,  podemos  criar  versões  em diversos idiomas do texto
 original do app.
 
+
 ======================== Como Usar =========================
+
 
 1) Baixe o xgettext através do link:
    http://gnuwin32.sourceforge.net/packages/gettext.htm
@@ -43,7 +46,9 @@ original do app.
    idiomas.
 
 
+
 ============== Criando Novos Idiomas: Poedit ===============
+
 
 Caso  você  queira  criar  um  arquivo de idioma do zero, ou
 seja,  um  novo  idioma  para  a  aplicação,  siga os passos
