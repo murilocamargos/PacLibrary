@@ -12,6 +12,6 @@
 | Ícone na taskbar    | Luana    | wxTaskBarIcon        | ok     | minimizar tela   | ok     |
 | Banco de Dados      | Luana    | Fazer conexão        | ok     |                  |        |
 | Controle de Acesso  | Luana    | cadastro/acesso      | ok     | níveis de acesso | ok     |
-| Ajuda               | Luana    | wxHtmlHelpController |        |                  |        |
+| Ajuda               | Luana    | wxHtmlHelpController | ok     |                  |        |
+| Documentação geral  | Mur./Lu. |                      | ok     |                  |        |
 | Doc. de módulo      | Luana    |                      |        |                  |        |
-| Documentação geral  | Mur./Lu. |                      |        |                  |        |

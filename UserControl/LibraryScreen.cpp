@@ -15,6 +15,7 @@ BEGIN_EVENT_TABLE(LibraryScreen, wxFrame)
     EVT_MENU(MENU_FILE_QUIT, LibraryScreen::OnMenuFileQuit)
     EVT_MENU(MENU_USER_NEW, LibraryScreen::OnMenuUserNew)
     EVT_MENU(MENU_HELP, LibraryScreen::OnMenuHelp)
+    EVT_MENU(MENU_HELP_ABOUT, LibraryScreen::OnMenuHelpAbout)
     EVT_CLOSE(LibraryScreen::OnExit)
 END_EVENT_TABLE()
 
@@ -67,7 +68,7 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
     this->menu->Separator(file);
     this->menu->AddSubMenu(file, MENU_FILE_QUIT, _("Quit\tCtrl+Q"), _("Quit App."));
     this->menu->AddSubMenu(help, MENU_HELP, _("Help\tF1"), _("Get Help."));
-    this->menu->AddSubMenu(help, -1, _("About\tF2"), _("Get to know us better!"));
+    this->menu->AddSubMenu(help, MENU_HELP_ABOUT, _("About\tF2"), _("Get to know us better!"));
 
     // O menu de usuários estará disponível apenas ao administrador, por enquanto
     if (this->user_info["nivel"] == "1") {
@@ -78,7 +79,7 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
     SetMenuBar(this->menu);
 
     //StatusBar
-    wxString msg = _("Welcome ") + wxString(user_info["nome"]) + " :)";
+    wxString msg = _("Welcome") + " " + wxString(user_info["nome"]) + " :)";
     CreateStatusBar(2);
     SetStatusText(msg, 1);
 
@@ -86,12 +87,14 @@ LibraryScreen::LibraryScreen(const wxString& title, wxApp *app, std::string uid,
 
 void LibraryScreen::OnMenuFileNew(wxCommandEvent& event)
 {
-    wxLogMessage(_("You have created a new file!"));
+    wxMessageDialog dlg(this, _("You have created a new file!"), _("File created"), wxICON_INFORMATION);
+    dlg.ShowModal();
 }
 
 void LibraryScreen::OnMenuFileSave(wxCommandEvent& event)
 {
-    wxLogMessage(_("Your file was saved with success!"));
+    wxMessageDialog dlg(this, _("Your file was saved with success!"), _("File saved"), wxICON_INFORMATION);
+    dlg.ShowModal();
 }
 
 void LibraryScreen::OnMenuFileOpen(wxCommandEvent& event)
@@ -127,7 +130,7 @@ bool LibraryScreen::CloseFrame()
         {
             // Só esconde o frame para não ter de criá-lo novamente
             this->Hide();
-            this->taskbar->SetIcon(wxICON(APP_ICON), _("Your application is here!"));
+            this->taskbar->SetIcon(wxICON(APP_ICON), _("Library"));
         }
         else
         {
@@ -166,4 +169,10 @@ void LibraryScreen::OnExit(wxCloseEvent& event)
 void LibraryScreen::OnMenuHelp(wxCommandEvent& event)
 {
     help->ShowHelp();
+}
+
+void LibraryScreen::OnMenuHelpAbout(wxCommandEvent & event)
+{
+    wxMessageDialog dlg(this, _("Developed by Luana Michelly and Murilo Camargos\nComputer Aided Project\nUNIMONTES"), _("About"), wxICON_QUESTION);
+    dlg.ShowModal();
 }

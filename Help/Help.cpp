@@ -6,7 +6,7 @@
 Help::Help()
 {
     this->AddBook(wxString("Help/HelpTool/LibraryHelp.hhp"), false);
-    this->SetTitleFormat(_("Library Help"));
+    this->SetTitleFormat(_("Help"));
 }
 
 void Help::ShowHelp()

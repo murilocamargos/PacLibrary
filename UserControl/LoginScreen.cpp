@@ -160,6 +160,7 @@ void LoginScreen::Login(wxCommandEvent& event)
     }
     else
     {
-        wxLogMessage(_("There is something wrong with your credentials!"));
+        wxMessageDialog dlg(this, _("There is something wrong with your credentials!"), _("Warning"), wxICON_ERROR);
+        dlg.ShowModal();
     }
 }

@@ -152,17 +152,20 @@ void InsertUserScreen::Save(wxCommandEvent& event)
     // Checar se todos os campos foram preenchidos
     if (name == "" || login == "" || passwd == "" || passwd2 == "")
     {
-        wxLogMessage(_("You must fill all fields!"));
+        wxMessageDialog dlg(this, _("You must fill all fields!"), _("Warning"), wxICON_EXCLAMATION);
+        dlg.ShowModal();
     }
     // Checar se senhas são iguais
     else if (passwd2 != passwd)
     {
-        wxLogMessage(_("The passwords must be equal!"));
+        wxMessageDialog dlg(this, _("The passwords must be equal!"), _("Warning"), wxICON_EXCLAMATION);
+        dlg.ShowModal();
     }
     // Checar se login já não está cadastrado
     else if (db->NumRows(sql->Table("usuarios")->Where("login", login)) > 0)
     {
-        wxLogMessage(_("This login is already registered!"));
+        wxMessageDialog dlg(this, _("This login is already registered!"), _("Warning"), wxICON_EXCLAMATION);
+        dlg.ShowModal();
     }
     else
     {
@@ -181,7 +184,8 @@ void InsertUserScreen::Save(wxCommandEvent& event)
 
         db->Exec(sql->Insert());
 
-        wxLogMessage(_("The user was registered with success!"));
+        wxMessageDialog dlg(this, _("The user was registered with success!"), _("Success"), wxICON_INFORMATION);
+        dlg.ShowModal();
         Close(true);
     }
 

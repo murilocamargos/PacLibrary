@@ -1,8 +1,8 @@
 MyMenu *menu = new MyMenu();
 
-wxString file = _("File"),
-         help = _("Help"),
-         lang = _("Languages");
+wxString file = "File",
+         help = "Help",
+         lang = "Languages";
 
 menu->AddMenu(file);
 menu->AddMenu(help);
@@ -10,22 +10,22 @@ menu->AddMenu(lang, false); // Veja que o menu ainda não foi acoplado à barra
 
 // Começo a tratar o submenu `lang` como se fosse um menu e adiciono
 // submenus a ele.
-menu->AddSubMenu(lang, MENU_LANG_EN, _("English"), _("Change to english."));
-menu->AddSubMenu(lang, MENU_LANG_PT, _("Portuguese"), _("Change to portuguese."));
+menu->AddSubMenu(lang, MENU_LANG_EN, "English", "Change to english.");
+menu->AddSubMenu(lang, MENU_LANG_PT, "Portuguese", "Change to portuguese.");
 
 
-menu->AddSubMenu(file, MENU_FILE_NEW, _("New\tCtrl+N"), _("New File."));
-menu->AddSubMenu(file, MENU_FILE_OPEN, _("Open\tCtrl+O"), _("Open File."));
-menu->AddSubMenu(file, MENU_FILE_SAVE, _("Save\tCtrl+S"), _("Save File."));
+menu->AddSubMenu(file, MENU_FILE_NEW, "New\tCtrl+N", "New File.");
+menu->AddSubMenu(file, MENU_FILE_OPEN, "Open\tCtrl+O", "Open File.");
+menu->AddSubMenu(file, MENU_FILE_SAVE, "Save\tCtrl+S", "Save File.");
 menu->Separator(file);
-menu->AddSubMenu(file, MENU_FILE_QUIT, _("Quit\tCtrl+Q"), _("Quit App."));
+menu->AddSubMenu(file, MENU_FILE_QUIT, "Quit\tCtrl+Q", "Quit App.");
 
 
-menu->AddSubMenu(help, -1, _("Help\tF1"), _("Get Help."));
-menu->AddSubMenu(help, -1, _("About\tF2"), _("Get to know us better!"));
+menu->AddSubMenu(help, -1, "Help\tF1", "Get Help.");
+menu->AddSubMenu(help, -1, "About\tF2", "Get to know us better!");
 menu->Separator(help);
 // Ao usar essa definição de AddSubMenu, acoplei o menu `lang` como um submenu de `help`
-menu->AddSubMenu(help, lang, _("Change languages!"));
+menu->AddSubMenu(help, lang, "Change languages!");
 
 /* Os menus vão ficar da seguinte forma:
 

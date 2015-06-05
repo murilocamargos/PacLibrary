@@ -69,6 +69,10 @@ public:
     //! da aplicação.
     void OnMenuHelp(wxCommandEvent &);
 
+    //! \brief Mostrar tela informativa sobre os desenvolvedores.
+    //! \param event Evento que ocorre ao clicar num item da barra de menus.
+    void OnMenuHelpAbout(wxCommandEvent &);
+
     //! \brief Fechar aplicação.
     //! \param event Evento que ocorre ao fechar a aplicação.
     //! \details Neste caso, o fechamento se dá pelo clique no botão <b>x</b>
@@ -98,7 +102,8 @@ public:
         MENU_FILE_OPEN,
         MENU_FILE_QUIT,
         MENU_USER_NEW,
-        MENU_HELP
+        MENU_HELP,
+        MENU_HELP_ABOUT
     };
 
     DECLARE_EVENT_TABLE();

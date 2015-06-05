@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-20 19:57-0300\n"
+"POT-Creation-Date: 2015-06-04 21:06-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,122 +16,255 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:51
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:176
+msgid "About"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:71
 msgid "About\tF2"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:89
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:54
+msgid "Access Level:"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:76
+msgid "Add User"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:76
+msgid "Add a new user."
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:19
+msgid "Admin"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:102
 msgid "All files (*.*)|*.*"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:30
-msgid "Change the app language to english!"
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:101
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:120
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:94
+msgid "Cancel"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:34
-msgid "Change the app language to french!"
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:120
+msgid "Close"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:32
-msgid "Change the app language to portuguese!"
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\TaskBar\TaskBar.cpp:15
+msgid "Close application"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:54
-msgid "Change the app language."
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\TaskBar\TaskBar.cpp:15
+msgid "Close window"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:96
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:118
 msgid "Confirmation"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:95
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:176
+msgid ""
+"Developed by Luana Michelly and Murilo Camargos\n"
+"Computer Aided Project\n"
+"UNIMONTES"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:118
 msgid "Do you really want to close the app?"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:29
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:24
 msgid "English"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:23
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:58
 msgid "File"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:33
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:90
+msgid "File created"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:96
+msgid "File saved"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:25
 msgid "French"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:50
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:50
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:70
 msgid "Get Help."
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:52
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:71
 msgid "Get to know us better!"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:24
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\Help\Help.cpp:9
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:59
 msgid "Help"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:49
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:70
 msgid "Help\tF1"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:25
-msgid "Languages"
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:111
+msgid "Insert User"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:39
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:66
+msgid "Language:"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\App\MyApp.cpp:62
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:133
+msgid "Library"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\App\MyApp.cpp:21
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:97
+msgid "Login"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:41
+msgid "Login:"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:20
+msgid "Manager"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:120
+msgid "Minimize"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:28
+msgid "Name:"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:65
 msgid "New\tCtrl+N"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:40
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:46
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:65
 msgid "New File."
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:41
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:66
 msgid "Open\tCtrl+O"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:42
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:44
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:66
 msgid "Open File."
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:31
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:85
+msgid "Password Again:"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:72
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:53
+msgid "Password:"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:26
 msgid "Portuguese"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:46
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:69
 msgid "Quit\tCtrl+Q"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:47
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:69
 msgid "Quit App."
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:43
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\TaskBar\TaskBar.cpp:14
+msgid "Reopen application"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:106
+msgid "Save"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:67
 msgid "Save\tCtrl+S"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:44
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:48
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:67
 msgid "Save File."
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:88
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:102
 msgid "Select a file"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\Menu\MyMenu.cpp:58
-msgid "This language is already selected!"
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\TaskBar\TaskBar.cpp:14
+msgid "Show window"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\Menu\MyMenu.cpp:55
-msgid "This language is not supported by your system."
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:27
+msgid "Spanish"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:80
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:187
+msgid "Success"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:161
+msgid "The passwords must be equal!"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:187
+msgid "The user was registered with success!"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:163
+msgid "There is something wrong with your credentials!"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:167
+msgid "This login is already registered!"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:21
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:60
+msgid "User"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:40
+msgid "Username:"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:155
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:161
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:167
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LoginScreen.cpp:163
+msgid "Warning"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:82
+msgid "Welcome"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:90
 msgid "You have created a new file!"
 msgstr ""
 
-#: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyFrame.cpp:84
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:155
+msgid "You must fill all fields!"
+msgstr ""
+
+#: C:\Users\MuriloCamargos\Documents\University\PAC\pac-tpii\UserControl\LibraryScreen.cpp:96
 msgid "Your file was saved with success!"
 msgstr ""
