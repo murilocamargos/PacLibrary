@@ -6,6 +6,16 @@
 </HEAD><BODY>
 <UL>
 	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Log">
+		<param name="Name" value="Untitled: c:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\Help\HelpTool\Login.htm">
+		<param name="Local" value="Login.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Tools">
+		<param name="Name" value="Untitled: c:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\Help\HelpTool\Barradeferramentas.htm">
+		<param name="Local" value="Barradeferramentas.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="Task">
 		<param name="Name" value="Taskbar">
 		<param name="Local" value="Taskbar.htm">

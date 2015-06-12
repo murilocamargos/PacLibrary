@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-05 00:43-0300\n"
-"PO-Revision-Date: 2015-06-05 00:48-0300\n"
+"PO-Revision-Date: 2015-06-07 08:59-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -139,7 +139,7 @@ msgstr "Bibliothèque"
 #: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\App\MyApp.cpp:21
 #: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\UserControl\LoginScreen.cpp:97
 msgid "Login"
-msgstr "Identifiant"
+msgstr "Valider"
 
 #: C:\Users\Luana\Documents\Estudos\Faculdade\PAC\pac-tpii\UserControl\InsertUserScreen.cpp:41
 msgid "Login:"

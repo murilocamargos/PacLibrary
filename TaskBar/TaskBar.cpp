@@ -17,6 +17,7 @@ TaskBar::TaskBar(wxWindow *parent)
 
 void TaskBar::ShowFrame(wxTaskBarIconEvent& event)
 {
+    this->RemoveIcon();
     this->parent->Show(true);
 }
 
@@ -27,6 +28,7 @@ void TaskBar::ShowMenu(wxTaskBarIconEvent& event)
 
 void TaskBar::Open(wxCommandEvent& event)
 {
+    this->RemoveIcon();
     this->parent->Show(true);
 }
 

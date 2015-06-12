@@ -75,8 +75,3 @@ terá  dois  arquivos  de tradução, um `.po` e um `.mo`. Você
 deve  criar  uma  pasta  (caso  não  exista) com o código do
 idioma (disponi. em http://xml.coverpages.org/iso639a.html),
 colocar o arquivo `.mo` dentro e renomeá-lo para `myapp.mo`.
-
-
-========================= Versão 1 =========================
-
-Português, Inglês.

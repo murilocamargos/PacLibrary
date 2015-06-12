@@ -15,10 +15,44 @@ meuhelp="Library Help","Conteudo.hhc","Index.hhk","Menu.htm",,,,,,0x2120,,0x3006
 [FILES]
 Menu.htm
 Taskbar.htm
+Barradeferramentas.htm
+Login.htm
+Login1.htm
+Menu1.htm
+Menu2.htm
+Menu3.htm
+Menu4.htm
+Others1.htm
+Others2.htm
+Others3.htm
+Task1.htm
+Task2.htm
+Task3.htm
+Tool1.htm
+Tool2.htm
+Tool3.htm
+Tool4.htm
 
 [ALIAS]
+IDH_LOGIN=Login.htm
+IDH_LOGIN1=Login1.htm
 IDH_MENU=Menu.htm
+IDH_MENU1=Menu1.htm
+IDH_MENU2=Menu2.htm
+IDH_MENU3=Menu3.htm
+IDH_MENU4=Menu4.htm
+IDH_OTHERS1=Others1.htm
+IDH_OTHERS2=Others2.htm
+IDH_OTHERS3=Others3.htm
+IDH_TASK1=Task1.htm
+IDH_TASK2=Task2.htm
+IDH_TASK3=Task3.htm
 IDH_TASKBAR=Taskbar.htm
+IDH_TOOL1=Tool1.htm
+IDH_TOOL2=Tool2.htm
+IDH_TOOL3=Tool3.htm
+IDH_TOOL3=Tool4.htm
+IDH_TOOLBAR=Barradeferramentas.htm
 
 [MAP]
 #include helpmap.h

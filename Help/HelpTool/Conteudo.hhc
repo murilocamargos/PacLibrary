@@ -9,16 +9,92 @@
 </OBJECT>
 <UL>
 	<LI> <OBJECT type="text/sitemap">
-		<param name="Name" value="Apresenta&ccedil;&atilde;o">
+		<param name="Name" value="Menu">
+		<param name="Local" value="Menu.htm">
 		</OBJECT>
 	<UL>
 		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="Taskbar">
-			<param name="Local" value="Taskbar.htm">
+			<param name="Name" value="Como abrir novo arquivo">
+			<param name="Local" value="Menu1.htm">
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="Menu">
-			<param name="Local" value="Menu.htm">
+			<param name="Name" value="Como salvar arquivo">
+			<param name="Local" value="Menu2.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como abrir arquivo existente">
+			<param name="Local" value="Menu3.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como sair do aplicativo">
+			<param name="Local" value="Menu4.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Taskbar">
+		<param name="Local" value="Taskbar.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como minimizar para taskbar">
+			<param name="Local" value="Task1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como reabrir aplicativo">
+			<param name="Local" value="Task2.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como fechar aplicativo pela taskbar">
+			<param name="Local" value="Task3.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Toolbar">
+		<param name="Local" value="Barradeferramentas.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como abrir arquivo existente">
+			<param name="Local" value="Tool1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como abrir novo arquivo">
+			<param name="Local" value="Tool2.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como salvar arquivo">
+			<param name="Local" value="Tool3.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como abrir livro de ajuda pela barra de ferramentas">
+			<param name="Local" value="Tool4.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Login">
+		<param name="Local" value="Login.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Explicando login do aplicativo">
+			<param name="Local" value="Login1.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Outros">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como adicionar novo usu&aacute;rio">
+			<param name="Local" value="Others1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Como mudar idioma">
+			<param name="Local" value="Others2.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Atalhos do programa">
+			<param name="Local" value="Others3.htm">
 			</OBJECT>
 	</UL>
 </UL>
