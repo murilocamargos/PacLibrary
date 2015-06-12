@@ -1,4 +1,6 @@
-﻿Divisão do Trabalho
+﻿~
+
+Divisão do Trabalho
 ===================
 
 | Funcionalidade      | Autor(a) | Descrição            | Status | Extras           | Status |
@@ -14,3 +16,8 @@
 | Controle de Acesso  | Luana    | cadastro/acesso      | ok     | níveis de acesso | ok     |
 | Ajuda               | Luana    | wxHtmlHelpController | ok     |                  |        |
 | Documentação geral  | Mur./Lu. |                      | ok     |                  |        |
+
+Modelo Entidade-Relacionamento
+==============================
+
+![](https://bitbucket.org/luana_michelly/pac-tpii/raw/master/Images/PAC-Library ER.png)
