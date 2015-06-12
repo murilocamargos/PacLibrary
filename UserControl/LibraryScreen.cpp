@@ -113,57 +113,14 @@ void LibraryScreen::OnMenuUserNew(wxCommandEvent& event)
     ins->Show(TRUE);
 }
 
-bool LibraryScreen::CloseFrame()
-{
-    wxMessageDialog dlg(this, _("Do you really want to close the app?"), _("Confirmation"), wxYES_NO | wxCANCEL);
-
-    dlg.SetYesNoCancelLabels(_("Close"), _("Minimize"), _("Cancel"));
-
-    int answer = dlg.ShowModal();
-
-    if (answer != wxID_CANCEL)
-    {
-        MyApp *app = (MyApp*)this->app;
-        app->SetExitOnFrameDelete(bool(answer == wxID_YES));
-
-        if (answer == wxID_NO)
-        {
-            // Só esconde o frame para não ter de criá-lo novamente
-            this->Hide();
-            this->taskbar->SetIcon(wxICON(APP_ICON), _("Library"));
-        }
-        else
-        {
-            // Salva ultimo idioma utilizado pelo usuário
-            wxConfig config(app->GetAppName());
-            long language = (app->locale->GetLanguage());
-            config.Write(wxT("wxTranslation_Language"), language);
-            config.Flush();
-
-            return true;
-        }
-    }
-
-    return false;
-}
-
 void LibraryScreen::OnMenuFileQuit(wxCommandEvent& event)
 {
-    if (this->CloseFrame())
-    {
-        this->taskbar->Destroy();
-        Destroy();
-    }
+    this->taskbar->CloseParent();
 }
 
 void LibraryScreen::OnExit(wxCloseEvent& event)
 {
-    if (this->CloseFrame())
-    {
-        this->taskbar->Destroy();
-        Destroy();
-        event.Skip();
-    }
+    this->taskbar->CloseParent();
 }
 
 void LibraryScreen::OnMenuHelp(wxCommandEvent& event)

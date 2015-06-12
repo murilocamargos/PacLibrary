@@ -17,6 +17,7 @@ private:
     wxApp *app;
     std::map<std::string, std::string> user_info;
     Help *help;
+
 public:
 
     //! \brief Construtor.
@@ -78,21 +79,6 @@ public:
     //! \details Neste caso, o fechamento se dá pelo clique no botão <b>x</b>
     //! no canto superior direito da aplicação.
     void OnExit(wxCloseEvent& event);
-
-    //! \brief Exibe uma confimação para fechar ou não a aplicação.
-    //! \return Valor lógico caso o usuário deseje fechar a aplicação ou não.
-    //! \details O usuário possui três opções, pode fechar a aplicação completamente,
-    //! pode cancelar a caixa de diálog aberta e pode minimizar a aplicação para a
-    //! barra de tarefas do windows.
-    //!
-    //! Caso o usuário escolha fechar completamente a aplicação, este método irá salvar
-    //! no registro do windows o idioma utilizado pelo usuário, para que na próxima vez
-    //! que ele abrir a aplicação, o idioma se preserve.
-    //!
-    //! Caso ele queira apenas minimizar a aplicação, o método irá <b>esconder</b> o
-    //! frame principal e criará um ícone da aplicação na barra de tarefas. Ao clicar
-    //! neste ícone, o usuário irá restaurar o frame.
-    bool CloseFrame();
 
     /// Enumera as funções dos itens dos menus para a tabela de eventos.
     enum

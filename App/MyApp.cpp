@@ -28,6 +28,17 @@ bool MyApp::OnInit()
     return true;
 }
 
+int MyApp::OnExit()
+{
+    // Salva ultimo idioma utilizado pelo usuário
+    wxConfig config(GetAppName());
+    long language = (this->locale->GetLanguage());
+    config.Write(wxT("wxTranslation_Language"), language);
+    config.Flush();
+
+    return 1;
+}
+
 long MyApp::LoadLang()
 {
     wxConfig config(GetAppName());
