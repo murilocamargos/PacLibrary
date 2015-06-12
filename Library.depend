@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1434114681 source:c:\faculdade\pac\pac-tpii\app\myapp.cpp
+1434116981 source:c:\faculdade\pac\pac-tpii\app\myapp.cpp
 	"../LibraryInc.h"
 	"MyApp.h"
 	"../UserControl/LoginScreen.h"
@@ -2003,14 +2003,14 @@
 
 1433457846 c:\faculdade\pac\pac-tpii\usercontrol\loginscreen.h
 
-1434110463 c:\faculdade\pac\pac-tpii\usercontrol\libraryscreen.h
+1434116981 c:\faculdade\pac\pac-tpii\usercontrol\libraryscreen.h
 	"../Menu/MyMenu.h"
 	"../TaskBar/TaskBar.h"
 	"../Help/Help.h"
 
 1433387156 c:\faculdade\pac\pac-tpii\menu\mymenu.h
 
-1434115130 c:\faculdade\pac\pac-tpii\taskbar\taskbar.h
+1434116981 c:\faculdade\pac\pac-tpii\taskbar\taskbar.h
 	<wx/wx.h>
 	<wx/taskbar.h>
 
@@ -2314,7 +2314,7 @@
 1433457134 c:\faculdade\pac\pac-tpii\encryption\sha256.h
 	<string>
 
-1433449107 source:c:\faculdade\pac\pac-tpii\images\resources.rc
+1434116981 source:c:\faculdade\pac\pac-tpii\images\resources.rc
 	"wx/msw/wx.rc"
 
 1412518750 c:\wxwidgets-3.0.2\include\wx\msw\wx.rc
@@ -2350,7 +2350,7 @@
 	"../LibraryInc.h"
 	"SplashScreen.h"
 
-1434114917 source:c:\faculdade\pac\pac-tpii\usercontrol\libraryscreen.cpp
+1434116981 source:c:\faculdade\pac\pac-tpii\usercontrol\libraryscreen.cpp
 	"../LibraryInc.h"
 	"LibraryScreen.h"
 	"InsertUserScreen.h"
@@ -2382,6 +2382,6 @@
 	"../Encryption/SHA256.h"
 	"../Log/Log.h"
 
-1434114815 source:c:\faculdade\pac\pac-tpii\taskbar\taskbar.cpp
+1434116981 source:c:\faculdade\pac\pac-tpii\taskbar\taskbar.cpp
 	"TaskBar.h"
 
