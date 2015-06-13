@@ -20,4 +20,4 @@ Divisão do Trabalho
 Modelo Entidade-Relacionamento
 ==============================
 
-![](https://bitbucket.org/luana_michelly/pac-tpii/raw/master/Images/mer.png)
+![](https://bitbucket.org/tpspac/library/raw/master/Images/mer.png)
