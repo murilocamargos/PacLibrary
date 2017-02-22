@@ -1,7 +1,7 @@
-﻿~
+# Library
 
-Divisão do Trabalho
-===================
+Trabalho prático da disciplina de Projeto Assistido por Computador Engenharia de Sistemas
+
 
 | Funcionalidade      | Autor(a) | Descrição            | Status | Extras           | Status |
 |---------------------|----------|----------------------|--------|------------------|--------|
@@ -16,8 +16,3 @@ Divisão do Trabalho
 | Controle de Acesso  | Luana    | cadastro/acesso      | ok     | níveis de acesso | ok     |
 | Ajuda               | Luana    | wxHtmlHelpController | ok     |                  |        |
 | Documentação geral  | Mur./Lu. |                      | ok     |                  |        |
-
-Modelo Entidade-Relacionamento
-==============================
-
-![](https://bitbucket.org/tpspac/library/raw/master/Images/mer.png)
