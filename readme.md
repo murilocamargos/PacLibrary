@@ -1,7 +1,10 @@
-# Library
+# TPII - Library
 
-Trabalho prático da disciplina de Projeto Assistido por Computador Engenharia de Sistemas
+Segundo trabalho prático da disciplina de Projeto Assistido por Computador
 
+Engenharia de Sistemas - Unimontes
+
+Documentação gerada pelo doxygen: http://murilocamargos.bitbucket.org/pac-tpii
 
 | Funcionalidade      | Autor(a) | Descrição            | Status | Extras           | Status |
 |---------------------|----------|----------------------|--------|------------------|--------|
